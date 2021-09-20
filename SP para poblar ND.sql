@@ -4,7 +4,7 @@ Víctor Ortega
 1-sep-2021
 */
 
-USE ND
+USE Northwind
 GO 
 
 CREATE PROCEDURE POBLAR
@@ -14,18 +14,18 @@ BEGIN
 
 -- Borro las tablas
 
-	 DELETE ND.[dbo].[FACT-SALES]
-	 DELETE ND.[dbo].[DIM-CATEGORY]
-	 DELETE ND.[dbo].[DIM-CUSTOMER]
-	 DELETE ND.[dbo].[DIM-EMPLOYEE]
-	 DELETE ND.[dbo].[DIM-PRODUCT]
-	 DELETE ND.[dbo].[DIM-TIME]
+	 DELETE Northwind.[dbo].[FACT-SALES]
+	 DELETE Northwind.[dbo].[DIM-CATEGORY]
+	 DELETE Northwind.[dbo].[DIM-CUSTOMER]
+	 DELETE Northwind.[dbo].[DIM-EMPLOYEE]
+	 DELETE Northwind.[dbo].[DIM-PRODUCT]
+	 DELETE Northwind.[dbo].[DIM-TIME]
 	 
 
 
 -- Poblar la dimensión Categoría
 	
-	INSERT INTO ND.[dbo].[DIM-CATEGORY] 
+	INSERT INTO Northwind.[dbo].[DIM-CATEGORY] 
 	SELECT 
 		  CategoryID, 
 		  CategoryName
@@ -33,7 +33,7 @@ BEGIN
 
 -- Poblar la dmiensión Cliente
 
-	INSERT INTO ND.[dbo].[DIM-CUSTOMER]
+	INSERT INTO Northwind.[dbo].[DIM-CUSTOMER]
 	SELECT 
 			CustomerID,
 			CompanyName,
@@ -48,7 +48,7 @@ BEGIN
 	
 -- Poblar la dimensión Empleado	
 
-	INSERT INTO ND.[dbo].[DIM-EMPLOYEE]
+	INSERT INTO Northwind.[dbo].[DIM-EMPLOYEE]
 	SELECT 
 			EmployeeID,
 			FirstName,
@@ -63,7 +63,7 @@ BEGIN
 
 -- Poblar la dimesnión Producto 
 
-	INSERT INTO ND.[dbo].[DIM-PRODUCT]
+	INSERT INTO Northwind.[dbo].[DIM-PRODUCT]
 	SELECT 
 			ProductID,
 			ProductName,
@@ -77,7 +77,7 @@ BEGIN
 	
 -- Poblar la dimensión Tiempo
 
-	INSERT INTO ND.[dbo].[DIM-TIME]   
+	INSERT INTO Northwind.[dbo].[DIM-TIME]   
 	SELECT
 		DISTINCT
 			
@@ -96,7 +96,7 @@ BEGIN
 	FROM Northwind.DBO.Orders
 
   --POBLAR HECHOS
-  INSERT INTO ND.dbo.[FACT-SALES] -- SELECT * FROM ND.dbo.[FACT-SALES] 
+  INSERT INTO Northwind.dbo.[FACT-SALES] -- SELECT * FROM Northwind.dbo.[FACT-SALES] 
   SELECT
 	DISTINCT
 		O.EmployeeID,
