@@ -1,0 +1,181 @@
+--1. Consulta  que muestre  el nombre(descripción)de  los 5 artículosque más salierondel almacén SUR[7 puntos]
+SELECT
+        [Measures].[Numero Salidas] ON COLUMNS,
+non empty topcount(
+        ORDER(
+                [Articulo].[Descripcion].[Descripcion]
+                ,[Measures].[Numero Salidas]
+                ,BDESC)
+        ,5) ON ROWS
+FROM [CUB_DIM706937]
+WHERE [Almacen].[Descripcion].[SUR];
+
+--2. Consulta  que  muestre los tipos  de  artículosen filas,la  cantidad de  salidas,un  nuevo dato  calculado  que  muestre  el  porcentaje  que  representa  cada  tipo en columnas. La información debe estar ordenada de forma descendente con base en el dato calculado.[7 puntos]
+WITH
+	MEMBER [Measures].[% del Total] as 
+			[Measures].[Numero Salidas]/
+			([Tipo].[Descripcion].[All],
+			[Measures].[Numero Salidas]),
+			format_string=" #.00 %" 
+SELECT
+	{[Measures].[Numero Salidas],
+	[Measures].[% del Total]}
+ON COLUMNS,
+NON EMPTY ORDER(
+	[Tipo].[Descripcion].MEMBERS,
+	[Measures].[% del Total],
+	BDESC)
+ON ROWS
+FROM [CUB_DIM706937];
+
+--3. Consulta que muestre un nuevo dato calculado con el nombre [número de artículos por cliente] en columnas y el TOP 10 de los clientes (razónsocial) en filas. Únicamente con la información de los días lunesde 2018 y ordenado de forma descendente con base en el dato calculado.[7 puntos]
+WITH
+	MEMBER [Measures].[número de artículos por cliente] as 
+			[Measures].[Cantidad Articulos]
+SELECT
+non empty
+	[Measures].[número de artículos por cliente]
+ON COLUMNS,
+NON EMPTY topcount(
+	[Cliente].[Razon Social].[Razon Social]
+	,10, [Measures].[número de artículos por cliente]
+	)ON ROWS
+FROM [CUB_DIM706937]
+WHERE ([Time].[Day Week].[Monday],[Time].[Year].[2018]);
+
+--4. Consulta  que  muestre cantidad  de  artículos(con  formato  de número  y  separador  de milesun campo que diga “Cantidad de artículos que salen del almacén”) y nombre del almacénen columnas.Además  del día  de  la  semana en  filas. El  resultado  debe estar ordenado de  forma  descendente con  base  en  los  resultados  del almacén SUR.[7 puntos]
+WITH
+	MEMBER [Measures].[SUR] as 
+			([Measures].[Cantidad Articulos], 
+			[Almacen].[Descripcion].[SUR])
+	MEMBER [Measures].[Cantidad de artículos que salen del almacén] as 
+			[Measures].[Cantidad Articulos],
+			format_string=" #,###" 
+SELECT
+	([Measures].[Cantidad de artículos que salen del almacén],
+	[Almacen].[Descripcion].[Descripcion] )
+ON COLUMNS,
+NON EMPTY 
+	order(
+	[Time].[Day Week].[Day Week],
+	[Measures].[SUR],
+	BDESC)
+ON ROWS
+FROM [CUB_DIM706937];
+
+--5. Consulta que muestre filas el nombre (descripción)de los artículosque no salierondel almacén el  año 2017y  2018.Ordenado de  forma  descendente  con  base  en  el  dato calculadocantidad de artículos.[7 puntos]
+-- Interpretacion 1
+SELECT
+	[Measures].[Cantidad Articulos]
+ON COLUMNS,
+NON EMPTY order(
+	filter(
+		[Articulo].[Descripcion].members,
+		( not [Time].[Year].[2018] 
+		  and not [Time].[Year].[2017]
+		) ),
+	[Measures].[Cantidad Articulos],
+	BDESC
+	)ON ROWS
+FROM [CUB_DIM706937];
+--Interpretacion 2
+SELECT [Measures].[Cantidad Articulos] ON COLUMNS,
+non empty ORDER (FILTER(
+        [Articulo].[Descripcion].[Descripcion],
+                [Measures].[Numero Salidas] > 0 ),
+        [Measures].[Cantidad Articulos], BDESC
+        )ON ROWS
+FROM [CUB_DIM706937]
+WHERE { [TIME].[YEAR].[2009], [TIME].[YEAR].[2010],
+        [TIME].[YEAR].[2011], [TIME].[YEAR].[2012],
+        [TIME].[YEAR].[2013], [TIME].[YEAR].[2014],
+        [TIME].[YEAR].[2015], [TIME].[YEAR].[2016],
+        [TIME].[YEAR].[2019]};
+
+--6. Consulta que muestre en filas la colonia de los clientes(sin mostrar datos nulos)y en columnas las   salidas   de almacén. Las salidasde almacéndeben sumar200correspondientea la parte inferior si se ordena de mayor a menor.[7 puntos]
+SELECT
+	[Measures].[Numero Salidas]
+ON COLUMNS,
+non empty(
+	order (
+		Bottomsum(
+			[Cliente].[Colonia].[Colonia],
+			200, [Measures].[Numero Salidas]),
+		[Measures].[Numero Salidas], DESC)
+	)ON ROWS
+FROM [CUB_DIM706937];
+
+--7. Consulta que muestre en filas el nombre de tipos de grupos de artículosy en columnas la cantidad de artículos. Solo deben mostrarse aquellos que representan el 50 % de lacantidad de artículos que salieron delalmacénnortey sean de color azul.[7 puntos]
+SELECT
+non empty
+	[Measures].[Cantidad Articulos]
+ON COLUMNS,
+NON EMPTY Toppercent(
+	[Grupo].[Description].[Description],
+	50,[Measures].[Cantidad Articulos]) 
+ON ROWS
+FROM [CUB_DIM706937]
+WHERE ([Almacen].[Descripcion].[NORTE], [Articulo].[Color].[Azul]);
+
+--8. Consulta que muestre el nombre de los 3vendedoresque menos cantidad de artículosblancos(eliminando  los  datos  nulos)  han  sacado  del  almacén en  filas  y  el  total  de artículosen columnas.[7 puntos]
+SELECT
+	[Measures].[Cantidad Articulos]
+ON COLUMNS,
+non empty
+	bottomcount (
+		[Vendedor].[Nombre].[Nombre], 3,
+		[Measures].[Cantidad Articulos])
+	ON ROWS
+FROM [CUB_DIM706937]
+WHERE [Articulo].[Color].[Blanco];
+
+--9. Utilizando la jerarquíade tiempo y las instrucciones MDX para el manejo de las mismas. Realiza una consulta que muestre los meses del último año de salidasdealmacénen filas y el total de artículosen columnas. [7 puntos]
+SELECT
+        [Measures].[Cantidad Articulos] ON COLUMNS,
+        [TIME].[Jerarquía 1].LASTCHILD.CHILDREN ON ROWS
+FROM [CUB_DIM706937];
+
+--10. Si la meta de cantidad de artículos que  salen del almacén por vendedor fuera 1,000artículos. Realiza una consulta que muestre el nombre de los vendedores en filas y en columnas un dato calculado [Meta] que indique si cumplió o no, además del datocalculado del total de artículos[7 puntos]
+WITH
+	MEMBER [Measures].[META] as
+	IIF([Measures].[Cantidad Articulos]<1000,
+		"NO CUMPLE META", "CUMPLE META")
+SELECT 
+NON EMPTY 
+	{[Measures].[Cantidad Articulos],
+	 [Measures].[META]}
+ON COLUMNS,
+NON EMPTY ORDER(
+	[Vendedor].[Nombre].[Nombre],
+	[Measures].[Cantidad Articulos], BDESC)
+ON ROWS
+FROM [CUB_DIM706937];
+
+--11. Una consulta que me muestre en las filas la unidad de medida de los artículosy en las columnas el dato calculadocantidadde artículos. Se debe mostrar únicamente la información de VINILICA[7 puntos]
+SELECT 
+NON EMPTY 
+	[Measures].[Cantidad Articulos] 
+ON COLUMNS,
+NON EMPTY 
+	[Articulo].[Umd].[Umd]
+ON ROWS
+FROM [CUB_DIM706937]
+WHERE [Tipo].[Descripcion].[VINIL ACRILICAS];
+
+--12. Una consulta que muestre los días de la semanaen columnas y los coloresrojo, amarillo  y  azulen filas. Solo  deben  mostrarse aquelloscuya  cantidad  de  salidasdel almacén nortesea mayor a 11.[7 puntos]
+WITH
+        MEMBER [Measures].[SALIDAS NORTE] AS
+        IIF(([Almacen].[Descripcion].[NORTE],
+        [Measures].[Numero Salidas]) > 11, [Measures].[Cantidad Articulos], " ")
+SELECT
+NON EMPTY
+        [TIME].[DAY Week].[DAY Week]
+ON COLUMNS,
+NON EMPTY
+        ([Measures].[SALIDAS NORTE], {
+        [Articulo].[Color].&[Rojo],
+        [Articulo].[Color].&[Azul],
+        [Articulo].[Color].&[Amarillo]
+        })
+ON ROWS
+FROM [CUB_DIM706937];

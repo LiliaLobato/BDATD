@@ -1,0 +1,467 @@
+-- Ejercicios MDX con funciones
+-- Víctor Ortega
+-- 20-sep-2021
+
+----------------------------------------------------------------------
+--Jerarquías
+----------------------------------------------------------------------
+-- 32) Parent and children #3
+	SELECT
+		[Dim Time].[Jerarquía 1].[Year].[1996].july.parent	
+		 ON COLUMNS
+	FROM [CUB_Northwind Dimensional];
+
+	SELECT
+		[Dim Time].[Jerarquía 1].[Year].[1996].[August].children	
+		 ON COLUMNS
+	FROM [CUB_Northwind Dimensional];
+
+----------------------------------------------------------------------
+--exists 
+----------------------------------------------------------------------
+-- 31) exists    
+	--no
+	SELECT
+	 exists(
+			[Dim Time].[Year].[2021]	
+		) ON COLUMNS
+	FROM [CUB_Northwind Dimensional];
+
+	--sí
+	SELECT
+	 exists(
+			[Dim Time].[Year].[1998]	
+		) ON COLUMNS
+	FROM [CUB_Northwind Dimensional];
+
+--EXISTS( «Set1», «Set2» )
+
+----------------------------------------------------------------------
+-- order
+----------------------------------------------------------------------
+-- 40) Muestra el nombre de la categoría en filas, el dato calculado total order en columnas. 
+-- Ordena el resultado ASC por Total Order
+	
+	--sin ordenar
+		SELECT 
+		NON EMPTY
+		[Measures].[Total Order] ON COLUMNS,
+		NON EMPTY
+		[Dim Categories].[Category Name].Members 
+		ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+	--ordenado
+		SELECT 
+		NON EMPTY
+		[Measures].[Total Order] ON COLUMNS,
+		NON EMPTY
+		order(
+				[Dim Categories].[Category Name].Members, 
+				[Measures].[Total Order],
+				ASC
+			)ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+--ORDER( «Set», {«String Expression» | «Numeric Expression»}[, ASC | DESC | BASC | BDESC] )
+
+--41
+	SELECT 
+		[Measures].[Total Order] ON COLUMNS,
+		order(
+				[Dim Categories].[Category Name].Members, 
+				[Measures].[Total Order],
+				DESC
+			)ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+--42) la letra B al inicio de BASC | BDESC  significa “Rompe la Jerarquía.”
+	-- BASC
+	-- Al romper la jerarquía se ve como si usaras un ORDER BY [Measures].[Total Order] en SQL
+	SELECT 
+		[Measures].[Total Order] ON COLUMNS,
+		NON EMPTY
+		order(
+				[Dim Time].[Jerarquía 1].MEMBERS, 
+				[Measures].[Total Order],
+				BASC
+			)ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+	--ASC
+	SELECT 
+		[Measures].[Total Order] ON COLUMNS,
+		NON EMPTY
+		order(
+				[Dim Time].[Jerarquía 1].MEMBERS, 
+				[Measures].[Total Order],
+				ASC
+			)ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+-- 43)  Ordenar el resultado con base en otra medida no mostrada en la consulta  
+
+	SELECT 
+		[Measures].[Total Order] ON COLUMNS,
+		order(
+				[Dim Categories].[Category Name].Members, 
+				[Measures].[Quantity],
+				ASC
+			)ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+
+----------------------------------------------------------------------
+-- Filter
+----------------------------------------------------------------------
+	-- 50) Filter  ( Lo más parecido al WHERE de SQL)  
+	SELECT 
+			[Measures].[Total Order] ON COLUMNS,
+			filter ([Dim Categories].[Category Name].Members,
+					[Measures].[Total Order]> 200000	   
+					) ON ROWS
+	FROM [CUB_Northwind Dimensional];  
+
+	-- 51) Filter and 
+	SELECT 
+			[Measures].[Total Order] ON COLUMNS,
+			filter ([Dim Categories].[Category Name].Members,
+					[Measures].[Total Order] > 20000  and
+					[Measures].[Total Order] < 150000   
+					) ON ROWS
+	FROM [CUB_Northwind Dimensional]; 
+
+	-- 52) Filter or 
+	SELECT 
+			[Measures].[Total Order] ON COLUMNS,
+			filter ([Dim Categories].[Category Name].Members,
+					[Measures].[Total Order] > 20000  or
+					[Measures].[Total Order] < 150000   
+					) ON ROWS
+	FROM [CUB_Northwind Dimensional]; 
+
+
+	-- 52) Comparando dos medidas en un filter
+	SELECT 
+			{[Measures].[Unit Price], 
+				[Measures].[Quantity]	
+			}ON COLUMNS,
+			filter ([Dim Categories].[Category Name].Members,
+					[Measures].[Unit Price] < [Measures].[Quantity]
+					) ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+	-- 53) Non-measure Dimension en un Filter (IS)
+		SELECT 
+				{[Measures].[Unit Price], 
+					[Measures].[Quantity]	
+				}ON COLUMNS,
+				filter ([Dim Categories].[Category Name].[Category Name],
+						[Dim Categories].[Category Name].currentmember is
+						[Dim Categories].[Category Name].[Seafood]
+						) ON ROWS
+		FROM [CUB_Northwind Dimensional];
+      
+	  -- Misma consulta de una forma más simple
+	  SELECT 
+				{[Measures].[Unit Price], 
+					[Measures].[Quantity]	
+				}ON COLUMNS,
+				[Dim Categories].[Category Name].[Seafood] ON ROWS
+	  FROM [CUB_Northwind Dimensional];
+
+	  -- 54) Filter y Not (Todas las categorías menos Seafood)
+		SELECT 
+				{[Measures].[Unit Price], 
+					[Measures].[Quantity]	
+				}ON COLUMNS,
+				filter ([Dim Categories].[Category Name].[Category Name],
+						 not( 
+							  [Dim Categories].[Category Name].currentmember is
+							  [Dim Categories].[Category Name].[Seafood] )
+
+						) ON ROWS
+		FROM [CUB_Northwind Dimensional];
+
+--FILTER( «Set», «Search Condition» )
+
+----------------------------------------------------------------------
+-- topcount 
+----------------------------------------------------------------------
+	-- 56) topcount
+	SELECT 
+			[Measures].[Total Order] ON COLUMNS,
+			 topcount(
+						[Dim Categories].[Category Name].[Category Name], 
+						5 
+					  )ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+	-- 57) topcount con base en otra medida
+	SELECT 
+			{[Measures].[Total Order],
+			 [Measures].[Contar Orden]}ON COLUMNS,
+			 topcount(
+						[Dim Categories].[Category Name].[Category Name], 
+						5,
+						[Measures].[Contar Orden]
+					  )ON ROWS
+	FROM [CUB_Northwind Dimensional];
+	
+--TOPCOUNT( «Set», «Count»[, «Numeric Expression»] )
+
+----------------------------------------------------------------------
+-- BOTTOMCOUNT 
+----------------------------------------------------------------------
+	-- 58) BOTTOMCOUNT
+	SELECT 
+			[Measures].[Total Order] ON COLUMNS,
+			 BOTTOMCOUNT(
+						[Dim Categories].[Category Name].[Category Name], 
+						5 
+					  )ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+	-- 59) BOTTOMCOUNT con base en otra medida
+	SELECT 
+			{[Measures].[Total Order],
+			 [Measures].[Contar Orden]}ON COLUMNS,
+			 BOTTOMCOUNT(
+						[Dim Categories].[Category Name].[Category Name], 
+						5,
+						[Measures].[Contar Orden]
+					  )ON ROWS
+	FROM [CUB_Northwind Dimensional];
+	
+	--BOTTOMCOUNT( «Set», «Count»[, «Numeric Expression»] )
+
+
+----------------------------------------------------------------------
+-- TOPPERCENT 
+----------------------------------------------------------------------
+-- 60) Toppercent  -- top 20 percent of the category
+	SELECT 
+			[Measures].[Total Order] ON COLUMNS,
+			non empty(
+						Toppercent( [Dim Categories].[Category Name].[Category Name],
+								   20,
+								   [Measures].[Total Order]
+								)
+					  ) ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+
+--TOPPERCENT( «Set», «Percentage», «Numeric Expression» )
+
+
+----------------------------------------------------------------------
+-- BOTTOMPERCENT 
+----------------------------------------------------------------------
+
+-- 61) Bottompercent  -- bottom 20 percent of the category
+	SELECT 
+			[Measures].[Total Order] ON COLUMNS,
+			non empty(
+						BOTTOMPERCENT( [Dim Categories].[Category Name].[Category Name],
+								   20,
+								   [Measures].[Total Order]
+								)
+					  ) ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+
+
+--BOTTOMPERCENT( «Set», «Percentage», «Numeric Expression» )
+
+
+----------------------------------------------------------------------
+-- TOPSUM
+----------------------------------------------------------------------
+
+-- 62) Topsum  -- Category that sum 300,000 
+	SELECT 
+			[Measures].[Total Order] ON COLUMNS,
+			non empty(
+						Topsum( [Dim Categories].[Category Name].[Category Name],
+								   300000,
+								   [Measures].[Total Order]
+								)
+					  ) ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+
+--TOPSUM( «Set», «Value», «Numeric Expression» )
+
+
+----------------------------------------------------------------------
+-- BOTTOMSUM
+----------------------------------------------------------------------
+
+-- 63) Bottomsum  -- Category that sum 300,000 
+	SELECT 
+			[Measures].[Total Order] ON COLUMNS,
+			non empty(
+						Bottomsum( [Dim Categories].[Category Name].[Category Name],
+								   300000,
+								   [Measures].[Total Order]
+								)
+					  ) ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+--BOTTOMPERCENT( «Set», «Percentage», «Numeric Expression» )
+
+
+
+----------------------------------------------------------------------
+-- DATOS CALCULADOS 
+----------------------------------------------------------------------
+
+-- 64) Mensaje en el dato calculado
+	WITH 
+	MEMBER [Measures].[Mensaje] as "HOLA MUNDO"
+	SELECT 
+		[Measures].[Mensaje] ON COLUMNS,
+		[Dim Categories].[Category Name].[Category Name] ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+--65) Alias en el dato calculado
+	WITH 
+	MEMBER  [Measures].[Total de ventas] as [Measures].[Total Order]
+	SELECT 
+		{[Measures].[Total de ventas],
+		[Measures].[Total Order]} ON COLUMNS,
+		[Dim Categories].[Category Name].[Category Name] ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+--66) Operaciones 
+	WITH 
+	MEMBER  [Measures].[Unidades al cuadrado] as [Measures].[Unit Price]*[Measures].[Unit Price]
+	SELECT 
+		{[Measures].[Unidades al cuadrado],
+		[Measures].[Unit Price]} ON COLUMNS,
+		[Dim Categories].[Category Name].[Category Name] ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+--66) Operaciones y resultados con formato
+	WITH 
+	MEMBER  [Measures].[Unidades al cuadrado] as [Measures].[Unit Price]*[Measures].[Unit Price],
+			format_string=" #,###.00"
+	MEMBER  [Measures].[Unit Price con formato] as [Measures].[Unit Price],
+			format_string=" #,###.0"
+	SELECT 
+		{[Measures].[Unidades al cuadrado],
+		 [Measures].[Unit Price con formato],
+		 [Measures].[Unit Price]} ON COLUMNS,
+		[Dim Categories].[Category Name].[Category Name] ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+
+-- 68) % del TOTAL
+	WITH
+	MEMBER [Measures].[% del Total] as 
+			[Measures].[Total Order]/
+			([Dim Categories].[Category Name].[All],[Measures].[Total Order]),
+			format_string=" #.0 %" 
+	SELECT 
+		NON EMPTY
+		{[Measures].[Total Order],
+		 [Measures].[% del Total]
+		} ON COLUMNS,
+		NON EMPTY
+		[Dim Categories].[Category Name].Members ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+-- 69) % del TOTAL otra opción de formato
+	WITH
+	MEMBER [Measures].[% del Total] as 
+			[Measures].[Total Order]/
+			([Dim Categories].[Category Name].[All],[Measures].[Total Order]),
+			format_string="Percent" 
+	SELECT 
+		NON EMPTY
+		{[Measures].[Total Order],
+		 [Measures].[% del Total]
+		} ON COLUMNS,
+		NON EMPTY
+		[Dim Categories].[Category Name].Members ON ROWS
+	FROM [CUB_Northwind Dimensional];
+
+
+----------------------------------------------------------------------
+-- FUNCIONES DE AGREGACIÓN   (sum, median, min, max, avg, count, stddevp)
+--------------------------------------------------------------------
+
+	-- 73) Aggregation Sum
+		WITH	
+		MEMBER [Measures].[SUM_Weekday] as 
+				 SUM({[Dim Time].[Weekday].Friday,
+					  [Dim Time].[Weekday].Wednesday}, [Measures].[Quantity]), format_string=" #,###"
+		SELECT
+				{
+					[Measures].[Quantity],
+					[Measures].[SUM_Weekday]
+				}	ON COLUMNS,
+				{
+					[Dim Time].[Weekday].Friday,
+					[Dim Time].[Weekday].Wednesday
+				}ON ROWS
+		FROM [CUB_Northwind Dimensional];
+
+
+	--SUM( «Set»[, «Numeric Expression»] )
+
+	-- 74) MEDIAN( «Set»[, «Numeric Expression»] )
+		WITH	
+		MEMBER [Measures].[Media_Weekday] as 
+					MEDIAN({[Dim Time].[Weekday].Friday,
+						[Dim Time].[Weekday].Wednesday}, [Measures].[Quantity]), format_string=" #,###"
+		SELECT
+				{
+					[Measures].[Quantity],
+					[Measures].[Media_Weekday]
+				}	ON COLUMNS,
+				{
+					[Dim Time].[Weekday].Friday,
+					[Dim Time].[Weekday].Wednesday
+				}ON ROWS
+		FROM [CUB_Northwind Dimensional];
+    
+		-- 75) MAX( «Set»[, «Numeric Expression»] )
+		WITH	
+		MEMBER [Measures].[Media_Weekday] as 
+					MAX({[Dim Time].[Weekday].Friday,
+						[Dim Time].[Weekday].Wednesday}, [Measures].[Quantity]), format_string=" #,###"
+		SELECT
+				{
+					[Measures].[Quantity],
+					[Measures].[Media_Weekday]
+				}	ON COLUMNS,
+				{
+					[Dim Time].[Weekday].Friday,
+					[Dim Time].[Weekday].Wednesday
+				}ON ROWS
+		FROM [CUB_Northwind Dimensional];
+
+		-- 76) MIN( «Set»[, «Numeric Expression»] )
+		WITH	
+		MEMBER [Measures].[Media_Weekday] as 
+					MIN({[Dim Time].[Weekday].Friday,
+						[Dim Time].[Weekday].Wednesday}, [Measures].[Quantity]), format_string=" #,###"
+		SELECT
+				{
+					[Measures].[Quantity],
+					[Measures].[Media_Weekday]
+				}	ON COLUMNS,
+				{
+					[Dim Time].[Weekday].Friday,
+					[Dim Time].[Weekday].Wednesday
+				}ON ROWS
+		FROM [CUB_Northwind Dimensional];
+
+
+
+
+
+
+
+

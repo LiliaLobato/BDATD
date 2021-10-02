@@ -1,0 +1,251 @@
+SELECT 
+FROM [CUB_Northwind Dimensional];
+
+
+SELECT
+	[Dim Categories].[Category Name].[Category Name] ON COLUMNS
+FROM [CUB_Northwind Dimensional];
+
+SELECT
+	[Dim Categories].[Category Name].MEMBERS ON COLUMNS,
+	MEASURES.[TOTAL ORDER] ON ROWS
+FROM [CUB_Northwind Dimensional];
+
+--UNIQUE NAME 
+--SET { } {A,B} {A,B,C}
+
+
+SELECT
+	[Dim Categories].[Category Name].MEMBERS ON COLUMNS,
+	{ MEASURES.[TOTAL ORDER], 
+	  MEASURES.[CONTAR ORDEN]
+	 } ON ROWS
+	
+FROM [CUB_Northwind Dimensional];
+
+
+SELECT
+	NON EMPTY
+	[Dim Categories].[Category Name].MEMBERS ON COLUMNS,
+	{ MEASURES.[TOTAL ORDER], 
+	  MEASURES.[CONTAR ORDEN],
+	  MEASURES.[UNIT PRICE]
+	 } ON ROWS
+	
+FROM [CUB_Northwind Dimensional];
+
+SELECT
+	NON EMPTY
+	[Dim Categories].[Category Name].CONDIMENTS ON COLUMNS,
+	{ MEASURES.[TOTAL ORDER], 
+	  MEASURES.[CONTAR ORDEN],
+	  MEASURES.[UNIT PRICE]
+	 } ON ROWS
+	
+FROM [CUB_Northwind Dimensional];
+
+SELECT
+	NON EMPTY
+	{
+		[Dim Categories].[Category Name].&[Condiments],
+		[Dim Categories].[Category Name].&[Seafood]
+	}	ON COLUMNS,
+	{ MEASURES.[TOTAL ORDER], 
+	  MEASURES.[CONTAR ORDEN],
+	  MEASURES.[UNIT PRICE]
+	 } ON ROWS
+	
+FROM [CUB_Northwind Dimensional];
+
+--UNIQUE NAME 
+--SET { } {A,B} {A,B,C}
+--TUPLE (A,B) ({A,B}, B)  ({A,B}, {D,E,F})
+SELECT
+	 A ON COLUMNS,
+	 B ON ROWS
+FROM [CUB_Northwind Dimensional];
+
+
+
+SELECT
+	NON EMPTY
+	(	
+		{ [Dim Categories].[Category Name].&[Seafood],
+		  [Dim Categories].[Category Name].&[Condiments]
+		},
+		[Dim Product].[Product Name].[Product Name]
+     )
+		ON COLUMNS,
+	{ 
+	  MEASURES.[TOTAL ORDER], 
+	  MEASURES.[CONTAR ORDEN],
+	  MEASURES.[UNIT PRICE]
+	 } ON ROWS
+	
+FROM [CUB_Northwind Dimensional];
+
+
+WITH 
+MEMBER MEASURES.[NEW TOTAL] AS [Measures].[Total Order]*2
+MEMBER MEASURES.PRECIOUNITARIO AS [Measures].[Unit Price]
+
+SELECT 
+	 {
+	  MEASURES.[NEW TOTAL],
+	  [Measures].[Total Order],
+	  MEASURES.PRECIOUNITARIO
+	 } ON COLUMNS,
+	[Dim Categories].[Category Name].MEMBERS ON ROWS
+
+FROM [CUB_Northwind Dimensional];
+
+
+
+SELECT 
+		NON EMPTY 
+		 [Measures].[Unit Price]  ON COLUMNS, 
+		NON EMPTY 
+		 [Dim Categories].[Category Name].[Category Name].ALLMEMBERS  
+		 
+		 ON ROWS 
+FROM [CUB_Northwind Dimensional] 
+
+
+ SELECT 
+		NON EMPTY [Measures].[Unit Price]  ON COLUMNS, 
+		NON EMPTY [Dim Categories].[Category Name].[Category Name].ALLMEMBERS  
+		 ON ROWS 
+FROM ( 
+		SELECT ( { [Dim Customer].[Country].&[Argentina] } ) ON COLUMNS 
+		FROM [CUB_Northwind Dimensional]) 
+		WHERE ( [Dim Customer].[Country].&[Argentina] )  
+
+
+ SELECT 
+		NON EMPTY 
+		([Dim Customer].[Country].&[Argentina],
+		{	[Measures].[Total Order],
+			[Measures].[Unit Price]
+		}
+		)
+		ON COLUMNS, 
+		NON EMPTY 
+		
+		 [Dim Categories].[Category Name].[Category Name].MEMBERS
+		 ON ROWS 
+FROM [CUB_Northwind Dimensional] 
+
+SELECT 
+	  	[Measures].[Total Order] ON COLUMNS,
+		[Dim Time].[Year].[Year] ON ROWS
+FROM [CUB_Northwind Dimensional]; 
+
+SELECT 
+	  	[Measures].[Total Order] ON 0,
+		[Dim Time].[Year].[Year] ON 1
+FROM [CUB_Northwind Dimensional];
+
+
+SELECT 
+	  	[Measures].[Total Order] ON COLUMNS,
+		[Dim Time].[Jerarquía 1].[1996].[July].CHILDREN ON ROWS
+FROM [CUB_Northwind Dimensional];
+
+SELECT 
+	  	[Measures].[Total Order] ON COLUMNS,
+		[Dim Customer].[Jerarquía].Brazil.RJ.CHILDREN ON ROWS
+FROM [CUB_Northwind Dimensional];
+
+
+--Consultas en MDX
+--1) Todos los datos calculados en columnas
+
+SELECT
+	{
+	[Measures].[Contar Orden],
+	[Measures].[Discount],
+	[Measures].[Freight Order],
+	[Measures].[Quantity],
+	[Measures].[Recuento Fact Sales],
+	[Measures].[Total Order],
+	[Measures].[Unit Price]
+	} ON COLUMNS
+FROM [CUB_Northwind Dimensional];
+
+
+
+--2) Las ordenes (10283, 10285) en columnas, los productos (product name) en filas y en el cruce la cantidad
+SELECT
+	NON  EMPTY 
+	{
+	[Dim Sub Order].[Order ID].&[10283],
+	[Dim Sub Order].[Order ID].&[10285]
+	}ON columnS,
+	NON  EMPTY 
+	(
+		[Dim Product].[Product Name].[Product Name], 
+		[Measures].[Total Order] 
+	)
+	ON ROWS
+FROM [CUB_Northwind Dimensional];
+
+
+
+
+
+--3) En columnas los años, en filas los clientes (Company Name) y en el curce total order
+SELECT 
+NON  EMPTY
+	[Dim Time].[Year].[Year] ON COLUMNS,
+NON  EMPTY
+	(
+		[Dim Customer].[Company Name].[Company Name],
+	[Measures].[Total Order]
+	)ON ROWS
+FROM [CUB_Northwind Dimensional];
+
+
+
+--4) En columnas las categorías (category Name), 
+--en filas los nombres de los empleados (First Name) y en el cruce Contar Orden
+
+SELECT 
+NON  EMPTY [Dim Categories].[Category Name].[Category Name] ON COLUMNS,
+NON  EMPTY ([Dim Employee].[First Name].[First Name], [Measures].[Contar Orden]) ON ROWS
+FROM [CUB_Northwind Dimensional];
+
+--5) En columnas años en filas proveedores
+
+SELECT 
+NON EMPTY [Dim Time].[Year].[Year]   ON COLUMNS,
+NON EMPTY [Dim Suppliers].[Company Name].[Company Name]  ON ROWS
+FROM [CUB_Northwind Dimensional];
+
+
+
+
+
+
+	CREATE GLOBAL CUBE [CuboConNuevosDatos] 
+	Storage 'C:\Temp\NDMdx.cub'
+	FROM [CUB_Northwind Dimensional](
+
+		MEASURE [CUB_Northwind Dimensional].[Contar Orden],
+		MEASURE [CUB_Northwind Dimensional].[Discount],
+		MEASURE [CUB_Northwind Dimensional].[Freight Order],
+
+		MEASURE [CUB_Northwind Dimensional].[Quantity],
+		MEASURE [CUB_Northwind Dimensional].[Recuento Fact Sales],
+		MEASURE [CUB_Northwind Dimensional].[Total Order],
+		MEASURE [CUB_Northwind Dimensional].[Unit Price],
+
+		DIMENSION [CUB_Northwind Dimensional].[Dim Categories],
+		DIMENSION [CUB_Northwind Dimensional].[Dim Customer],
+		DIMENSION [CUB_Northwind Dimensional].[Dim Employee],
+		DIMENSION [CUB_Northwind Dimensional].[Dim Product],
+		DIMENSION [CUB_Northwind Dimensional].[Dim Shippers],
+		DIMENSION [CUB_Northwind Dimensional].[Dim Sub Order],
+		DIMENSION [CUB_Northwind Dimensional].[Dim Suppliers],
+		DIMENSION [CUB_Northwind Dimensional].[Dim Time]
+
+	)
