@@ -1,0 +1,13 @@
+CREATE GLOBAL cube [CUBO_NC_E706937]
+storage 'C:\Users\1234\source\repos\CUB_NC_E706937.cub'
+
+FROM [CUB_E706937](
+	MEASURE [CUB_E706937].[Num Movimientos],
+	MEASURE [CUB_E706937].[Total Pago],
+	MEASURE [CUB_E706937].[Recuento Fact Pago],
+
+	DIMENSION [CUB_E706937].[Dim Proveedor],
+	DIMENSION [CUB_E706937].[Dim Cuenta Bancaria],
+	DIMENSION [CUB_E706937].[Dim Time]
+
+)

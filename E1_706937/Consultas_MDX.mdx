@@ -1,0 +1,72 @@
+--Nombre del banco en columnas, año en filas y el cruce el total pagado.
+select 
+	[Dim Cuenta Bancaria].[Banco].[Banco] on columns,
+	non empty
+	([Measures].[Total Pago],
+	 [Dim Time].[Year].[Year] )on rows
+from [CUB_E706937]
+
+--Razón social de los proveedores que representan el 20% del total de pagos en el año 2019. Razón social en filas y total pagado en columnas.
+select 
+	[Measures].[Total Pago] on columns,
+non empty
+	toppercent(
+	[Dim Proveedor].[Razon Social].[Razon Social],
+	20,
+	[Measures].[Total Pago])
+on rows
+from [CUB_E706937]
+where [Dim Time].[Year].[2009]
+
+select 
+	[Measures].[Total Pago] on columns,
+non empty
+	bottompercent(
+	[Dim Proveedor].[Razon Social].[Razon Social],
+	20,
+	[Measures].[Total Pago])
+on rows
+from [CUB_E706937]
+where [Dim Time].[Year].[2009]
+
+--Porcentaje del total que representa el pago a cada proveedor. Razón social en filas. Total pagado y porcentaje que representa en columnas.
+WITH
+	MEMBER [Measures].[% del Total] as 
+			[Measures].[Total Pago]/
+			([Dim Proveedor].[Razon Social].[All],
+			[Measures].[Total Pago]),
+			format_string=" #.00 %" 
+SELECT
+	{[Measures].[Total Pago],
+	[Measures].[% del Total]}
+ON COLUMNS,
+NON EMPTY ORDER(
+	[Dim Proveedor].[Razon Social].MEMBERS,
+	[Measures].[% del Total],
+	BDESC)
+ON ROWS
+FROM [CUB_E706937];
+
+--Top 3 de movimientos en el pago a proveedores. En filas la razón social de los proveedores y en columnas el total de movimientos. 
+SELECT
+non empty
+	[Measures].[Num Movimientos]
+ON COLUMNS,
+NON EMPTY topcount(
+	[Dim Proveedor].[Razon Social].[Razon Social]
+	,3, [Measures].[Num Movimientos]
+	)ON ROWS
+FROM [CUB_E706937]
+
+--Únicamente de los lunes. Mostrar la razón social de los proveedores en filas y el total de movimientos en columnas, solo de aquellos que tengas más de tres movimientos. 
+SELECT
+non empty
+	[Measures].[Num Movimientos]
+ON COLUMNS,
+NON EMPTY
+	FILTER(
+		[Dim Proveedor].[Razon Social].[Razon Social],
+		[Measures].[Num Movimientos] > 3)
+ON ROWS
+FROM [CUB_E706937]
+WHERE [Dim Time].[Day Wek].[Monday]
