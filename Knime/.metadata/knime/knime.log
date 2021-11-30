@@ -1,0 +1,1053 @@
+2021-11-22 07:49:32,724 : WARN  : KNIME-Worker-5-Statistics 3:2 :  : Node : Statistics : 3:2 : Maximum number of unique possible values (1000) exceeds for column(s): "id"
+2021-11-22 07:55:27,721 : WARN  : main :  : Node : Color Manager : 3:3 : Selected column "classes" with default nominal color mapping.
+2021-11-22 07:57:42,924 : WARN  : main :  : Node : Partitioning : 3:4 : No sampling method selected
+2021-11-22 08:02:22,196 : WARN  : main :  : Node : Decision Tree Learner : 3:5 : Guessing target column: "habitat".
+2021-11-22 08:08:01,639 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 08:08:28,190 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 08:08:29,917 : WARN  : KNIME-Worker-13-Decision Tree Predictor 3:6 :  : DataTableSpec : Decision Tree Predictor : 3:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 08:09:31,968 : WARN  : main :  : Node : Scorer : 3:7 : No columns selected yet.
+2021-11-22 08:11:54,948 : WARN  : main :  : Node : PMML Writer : 3:8 : Please specify a file
+2021-11-22 08:18:00,651 : WARN  : main :  : Node : PMML Reader : 3:10 : Please specify a file
+2021-11-22 08:20:16,874 : WARN  : main :  : Node : CSV Writer : 3:12 : Please specify a file
+2021-11-22 09:40:19,117 : WARN  : main :  : Node : Normalizer : 4:3 : Auto-configure: [0, 1] normalization on all numeric columns: "ID", "Edad", "G‚nero (to number)"
+2021-11-22 09:52:00,219 : WARN  : main :  : Node : CSV Writer : 4:8 : Please specify a file
+2021-11-22 21:33:45,526 : WARN  : main :  : Node : Color Manager : 0:3 : Column "classes" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 21:34:23,800 : WARN  : main :  : Node : Color Manager : 0:3 : Column "classes" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 21:35:40,520 : WARN  : main :  : Node : Color Manager : 0:3 : Column "classes" not found.
+2021-11-22 21:35:41,401 : WARN  : main :  : Node : Color Manager : 0:3 : Column "classes" not found.
+2021-11-22 21:35:43,853 : WARN  : KNIME-Worker-3-CSV Reader 0:1 :  : Node : Color Manager : 0:3 : Column "classes" not found.
+2021-11-22 21:36:46,266 : WARN  : KNIME-Worker-4-Statistics 0:2 :  : Node : Statistics : 0:2 : Maximum number of unique possible values (1000) exceeds for column(s): "Name"
+2021-11-22 21:39:08,675 : WARN  : main :  : Node : Partitioning : 0:4 : Column 'classes' for stratified sampling does not exist
+2021-11-22 21:39:14,972 : WARN  : main :  : Node : Partitioning : 0:4 : Column 'classes' for stratified sampling does not exist
+2021-11-22 21:39:15,444 : WARN  : main :  : Node : Partitioning : 0:4 : Column 'classes' for stratified sampling does not exist
+2021-11-22 21:39:19,310 : WARN  : KNIME-Worker-7-Color Manager 0:3 :  : Node : Partitioning : 0:4 : Column 'classes' for stratified sampling does not exist
+2021-11-22 21:39:53,144 : WARN  : main :  : Node : Partitioning : 0:4 : Column 'classes' for stratified sampling does not exist
+2021-11-22 21:39:53,792 : WARN  : main :  : Node : Partitioning : 0:4 : Column 'classes' for stratified sampling does not exist
+2021-11-22 21:39:55,498 : WARN  : KNIME-Worker-8-Color Manager 0:3 :  : Node : Partitioning : 0:4 : Column 'classes' for stratified sampling does not exist
+2021-11-22 21:41:28,062 : WARN  : main :  : Node : Decision Tree Learner : 0:5 : Class column "classes" not found or incompatible
+2021-11-22 21:41:28,953 : WARN  : main :  : Node : Decision Tree Learner : 0:5 : Class column "classes" not found or incompatible
+2021-11-22 21:41:30,566 : WARN  : KNIME-Worker-9-Partitioning 0:4 :  : Node : Decision Tree Learner : 0:5 : Class column "classes" not found or incompatible
+2021-11-22 21:41:54,327 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:41:54,330 : WARN  : main :  : Node : Scorer : 0:7 : Column 'classes' not found.
+2021-11-22 21:41:55,089 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:41:55,090 : WARN  : main :  : Node : Scorer : 0:7 : Column 'classes' not found.
+2021-11-22 21:41:57,364 : WARN  : KNIME-Worker-10-Decision Tree Learner 0:5 :  : Node : Decision Tree Learner : 0:5 : 1735 rows removed due to missing class value;
+2021-11-22 21:41:57,770 : WARN  : KNIME-Worker-10-Decision Tree Learner 0:5 :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:43:06,660 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:43:06,661 : WARN  : main :  : Node : Scorer : 0:7 : Column 'classes' not found.
+2021-11-22 21:43:07,107 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:43:07,108 : WARN  : main :  : Node : Scorer : 0:7 : Column 'classes' not found.
+2021-11-22 21:43:09,400 : WARN  : KNIME-Worker-12-Decision Tree Predictor 0:6 :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:43:09,449 : WARN  : KNIME-Worker-12-Decision Tree Predictor 0:6 :  : Node : Scorer : 0:7 : Column 'classes' not found.
+2021-11-22 21:43:33,390 : WARN  : KNIME-Worker-13-Scorer 0:7 :  : Node : Scorer : 0:7 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 21:45:15,558 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:45:16,100 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:45:24,429 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:45:25,112 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:45:27,349 : WARN  : KNIME-Worker-15-Partitioning 0:4 :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:45:33,850 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:45:33,851 : WARN  : main :  : Node : Scorer : 0:7 : Column 'Prediction (Attribute)' not found.
+2021-11-22 21:45:34,666 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:45:34,667 : WARN  : main :  : Node : Scorer : 0:7 : Column 'Prediction (Attribute)' not found.
+2021-11-22 21:45:38,547 : WARN  : KNIME-Worker-16-Decision Tree Learner 0:5 :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:45:49,239 : WARN  : KNIME-Worker-14-Decision Tree Predictor 0:6 :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:45:49,286 : WARN  : KNIME-Worker-14-Decision Tree Predictor 0:6 :  : Node : Scorer : 0:7 : Column 'Prediction (Attribute)' not found.
+2021-11-22 21:45:59,370 : WARN  : KNIME-Worker-15-Scorer 0:7 :  : Node : Scorer : 0:7 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 21:47:24,909 : WARN  : KNIME-Worker-18-Scorer 0:7 :  : Node : Scorer : 0:7 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 21:48:30,894 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:48:31,348 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:48:37,787 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:48:38,436 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:48:43,012 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:48:43,012 : WARN  : main :  : Node : Scorer : 0:7 : Column 'Prediction (Race)' not found.
+2021-11-22 21:48:43,795 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:48:43,796 : WARN  : main :  : Node : Scorer : 0:7 : Column 'Prediction (Race)' not found.
+2021-11-22 21:49:00,080 : WARN  : KNIME-Worker-20-Partitioning 0:4 :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:49:01,972 : WARN  : KNIME-Worker-21-Decision Tree Learner 0:5 :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:49:04,531 : WARN  : KNIME-Worker-22-Decision Tree Predictor 0:6 :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:49:06,230 : WARN  : KNIME-Worker-19-Scorer 0:7 :  : Node : Scorer : 0:7 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 21:52:43,300 : WARN  : main :  : Node : Color Manager : 0:15 : Column "Type" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 21:52:48,057 : WARN  : main :  : Node : Color Manager : 0:15 : Column "Type" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 21:53:16,932 : WARN  : main :  : Node : Color Manager : 0:15 : Column "Type" not found.
+2021-11-22 21:53:18,113 : WARN  : main :  : Node : Color Manager : 0:15 : Column "Type" not found.
+2021-11-22 21:53:37,949 : WARN  : KNIME-Worker-24-CSV Reader 0:19 :  : Node : Color Manager : 0:15 : Column "Type" not found.
+2021-11-22 21:53:54,213 : WARN  : main :  : Node : Partitioning : 0:17 : Column 'Type' for stratified sampling does not exist
+2021-11-22 21:53:54,909 : WARN  : main :  : Node : Partitioning : 0:17 : Column 'Type' for stratified sampling does not exist
+2021-11-22 21:53:57,061 : WARN  : KNIME-Worker-27-Color Manager 0:15 :  : Node : Partitioning : 0:17 : Column 'Type' for stratified sampling does not exist
+2021-11-22 21:54:10,354 : WARN  : main :  : Node : Decision Tree Learner : 0:16 : Class column "Type" not found or incompatible
+2021-11-22 21:54:11,105 : WARN  : main :  : Node : Decision Tree Learner : 0:16 : Class column "Type" not found or incompatible
+2021-11-22 21:54:12,538 : WARN  : KNIME-Worker-24-Partitioning 0:17 :  : Node : Decision Tree Learner : 0:16 : Class column "Type" not found or incompatible
+2021-11-22 21:54:18,165 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:54:18,166 : WARN  : main :  : Node : Scorer : 0:13 : Column 'Type' not found.
+2021-11-22 21:54:19,092 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:54:19,093 : WARN  : main :  : Node : Scorer : 0:13 : Column 'Type' not found.
+2021-11-22 21:54:20,824 : WARN  : KNIME-Worker-26-Decision Tree Learner 0:16 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:54:26,581 : WARN  : KNIME-Worker-25-Decision Tree Predictor 0:18 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:54:26,585 : WARN  : KNIME-Worker-25-Decision Tree Predictor 0:18 :  : Node : Scorer : 0:13 : Column 'Type' not found.
+2021-11-22 21:54:37,082 : WARN  : KNIME-Worker-27-Scorer 0:13 :  : Node : Scorer : 0:13 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 21:55:38,313 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:55:39,121 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:55:45,684 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:55:46,944 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:55:48,414 : WARN  : KNIME-Worker-26-Partitioning 0:17 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:55:54,571 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:55:54,572 : WARN  : main :  : Node : Scorer : 0:13 : Column 'Prediction (Attributes)' not found.
+2021-11-22 21:55:55,331 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:55:55,332 : WARN  : main :  : Node : Scorer : 0:13 : Column 'Prediction (Attributes)' not found.
+2021-11-22 21:55:57,233 : WARN  : KNIME-Worker-28-Decision Tree Learner 0:16 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:56:02,045 : WARN  : KNIME-Worker-27-Decision Tree Predictor 0:18 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:56:02,051 : WARN  : KNIME-Worker-27-Decision Tree Predictor 0:18 :  : Node : Scorer : 0:13 : Column 'Prediction (Attributes)' not found.
+2021-11-22 21:56:14,932 : WARN  : KNIME-Worker-24-Scorer 0:13 :  : Node : Scorer : 0:13 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 21:57:13,133 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:57:13,965 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:57:33,206 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:57:33,542 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:57:45,011 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:57:45,579 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:57:50,664 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:57:50,665 : WARN  : main :  : Node : Scorer : 0:7 : Column 'Prediction (Type)' not found.
+2021-11-22 21:57:51,264 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:57:51,264 : WARN  : main :  : Node : Scorer : 0:7 : Column 'Prediction (Type)' not found.
+2021-11-22 21:58:02,467 : WARN  : KNIME-Worker-30-Partitioning 0:4 :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:04,223 : WARN  : KNIME-Worker-31-Decision Tree Learner 0:5 :  : Node : Decision Tree Learner : 0:5 : 1735 rows removed due to missing class value;
+2021-11-22 21:58:04,274 : WARN  : KNIME-Worker-31-Decision Tree Learner 0:5 :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:11,436 : WARN  : KNIME-Worker-32-Decision Tree Predictor 0:6 :  : DataTableSpec : Decision Tree Predictor : 0:6 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:12,994 : WARN  : KNIME-Worker-29-Scorer 0:7 :  : Node : Scorer : 0:7 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 21:58:18,640 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:19,242 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:23,977 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:24,522 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:29,103 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:29,104 : WARN  : main :  : Node : Scorer : 0:13 : Column 'Prediction (Sub-Types)' not found.
+2021-11-22 21:58:29,518 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:29,519 : WARN  : main :  : Node : Scorer : 0:13 : Column 'Prediction (Sub-Types)' not found.
+2021-11-22 21:58:45,472 : WARN  : KNIME-Worker-31-Partitioning 0:17 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:46,454 : WARN  : KNIME-Worker-32-Decision Tree Learner 0:16 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:47,238 : WARN  : KNIME-Worker-29-Decision Tree Predictor 0:18 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 21:58:48,195 : WARN  : KNIME-Worker-30-Scorer 0:13 :  : Node : Scorer : 0:13 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 22:03:42,016 : WARN  : main :  : Node : Color Manager : 0:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 22:04:04,380 : WARN  : main :  : Node : Color Manager : 0:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 22:04:05,677 : WARN  : main :  : Node : Color Manager : 0:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 22:04:15,590 : WARN  : KNIME-Worker-33-CSV Reader 0:28 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:04:32,311 : WARN  : KNIME-Worker-35-Partitioning 0:26 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:04:33,493 : WARN  : KNIME-Worker-36-Decision Tree Learner 0:25 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:04:34,703 : WARN  : KNIME-Worker-34-Decision Tree Predictor 0:27 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:04:35,426 : WARN  : KNIME-Worker-33-Scorer 0:21 :  : Node : Scorer : 0:21 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 22:08:28,682 : WARN  : main :  : Node : Numeric Scorer : 0:29 : No columns selected for reference
+2021-11-22 22:08:46,290 : ERROR : main :  : Node : Numeric Scorer : 0:29 : Configure failed (NullPointerException): null
+java.lang.NullPointerException
+	at org.knime.base.node.mine.scorer.numeric2.NumericScorer2NodeModel.configure(NumericScorer2NodeModel.java:291)
+	at org.knime.core.node.NodeModel.configure(NodeModel.java:1134)
+	at org.knime.core.node.NodeModel.configureModel(NodeModel.java:1083)
+	at org.knime.core.node.Node.invokeNodeModelConfigure(Node.java:1957)
+	at org.knime.core.node.Node.configure(Node.java:1893)
+	at org.knime.core.node.workflow.NativeNodeContainer.performConfigure(NativeNodeContainer.java:530)
+	at org.knime.core.node.workflow.SingleNodeContainer.callNodeConfigure(SingleNodeContainer.java:304)
+	at org.knime.core.node.workflow.SingleNodeContainer.configure(SingleNodeContainer.java:189)
+	at org.knime.core.node.workflow.WorkflowManager.configureSingleNodeContainer(WorkflowManager.java:6407)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndPortSuccessors(WorkflowManager.java:6566)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndSuccessors(WorkflowManager.java:6509)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:1982)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1088)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:510)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:935)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:843)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:129)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:184)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-11-22 22:08:46,974 : ERROR : main :  : Node : Numeric Scorer : 0:29 : Configure failed (NullPointerException): null
+java.lang.NullPointerException
+	at org.knime.base.node.mine.scorer.numeric2.NumericScorer2NodeModel.configure(NumericScorer2NodeModel.java:291)
+	at org.knime.core.node.NodeModel.configure(NodeModel.java:1134)
+	at org.knime.core.node.NodeModel.configureModel(NodeModel.java:1083)
+	at org.knime.core.node.Node.invokeNodeModelConfigure(Node.java:1957)
+	at org.knime.core.node.Node.configure(Node.java:1893)
+	at org.knime.core.node.workflow.NativeNodeContainer.performConfigure(NativeNodeContainer.java:530)
+	at org.knime.core.node.workflow.SingleNodeContainer.callNodeConfigure(SingleNodeContainer.java:304)
+	at org.knime.core.node.workflow.SingleNodeContainer.configure(SingleNodeContainer.java:189)
+	at org.knime.core.node.workflow.WorkflowManager.configureSingleNodeContainer(WorkflowManager.java:6407)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndPortSuccessors(WorkflowManager.java:6566)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndSuccessors(WorkflowManager.java:6509)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:1982)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1088)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:559)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:935)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:843)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:129)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:184)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-11-22 22:08:55,333 : ERROR : main :  : Node : Numeric Scorer : 0:29 : Configure failed (NullPointerException): null
+java.lang.NullPointerException
+	at org.knime.base.node.mine.scorer.numeric2.NumericScorer2NodeModel.configure(NumericScorer2NodeModel.java:291)
+	at org.knime.core.node.NodeModel.configure(NodeModel.java:1134)
+	at org.knime.core.node.NodeModel.configureModel(NodeModel.java:1083)
+	at org.knime.core.node.Node.invokeNodeModelConfigure(Node.java:1957)
+	at org.knime.core.node.Node.configure(Node.java:1893)
+	at org.knime.core.node.workflow.NativeNodeContainer.performConfigure(NativeNodeContainer.java:530)
+	at org.knime.core.node.workflow.SingleNodeContainer.callNodeConfigure(SingleNodeContainer.java:304)
+	at org.knime.core.node.workflow.SingleNodeContainer.configure(SingleNodeContainer.java:189)
+	at org.knime.core.node.workflow.WorkflowManager.configureSingleNodeContainer(WorkflowManager.java:6407)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndPortSuccessors(WorkflowManager.java:6566)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndSuccessors(WorkflowManager.java:6509)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:1982)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1088)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:510)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:935)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:843)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:129)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:184)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-11-22 22:09:05,017 : WARN  : KNIME-Worker-38-Numeric Scorer 0:29 :  : Node : Numeric Scorer : 0:29 : Can't calculate Mean Absolute Percentage error: target value is 0! DIVINE
+2021-11-22 22:09:21,020 : WARN  : main :  : Node : ROC Curve : 0:29 : Class column 'null ' does not exist
+2021-11-22 22:09:21,021 : WARN  : main :  : Node : ROC Curve : 0:29 : Class column 'null ' does not exist
+2021-11-22 22:09:46,045 : WARN  : main :  : Node : ROC Curve (local) : 0:29 : No curves defined
+2021-11-22 22:11:38,326 : WARN  : KNIME-Worker-40-Scatter Plot 0:30 :  : Node : Scatter Plot : 0:30 : Table contains missing or unsupported values - these values will be omitted.
+2021-11-22 22:19:16,985 : WARN  : main :  : Node : Color Manager : 0:15 : Column "Attributes" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 22:19:19,001 : WARN  : main :  : Node : Color Manager : 0:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 22:19:20,223 : WARN  : KNIME-Worker-42-CSV Reader 0:19 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:19:23,237 : WARN  : KNIME-Worker-42-Partitioning 0:17 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:19:24,260 : WARN  : KNIME-Worker-44-Decision Tree Learner 0:16 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:19:25,099 : WARN  : KNIME-Worker-43-Decision Tree Predictor 0:18 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:19:26,067 : WARN  : KNIME-Worker-45-Scorer 0:13 :  : Node : Scorer : 0:13 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 22:19:29,354 : WARN  : KNIME-Worker-44-CSV Reader 0:28 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:19:32,251 : WARN  : KNIME-Worker-44-Partitioning 0:26 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:19:33,712 : WARN  : KNIME-Worker-42-Decision Tree Learner 0:25 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:19:35,304 : WARN  : KNIME-Worker-43-Decision Tree Predictor 0:27 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:19:36,266 : WARN  : KNIME-Worker-45-Scorer 0:21 :  : Node : Scorer : 0:21 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 22:30:57,993 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:30:58,618 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:31:00,742 : WARN  : KNIME-Worker-47-Decision Tree Learner 0:16 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:31:01,690 : WARN  : KNIME-Worker-48-Decision Tree Predictor 0:18 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:31:02,378 : WARN  : KNIME-Worker-49-Scorer 0:13 :  : Node : Scorer : 0:13 : There were missing values in the reference or in the prediction class columns.
+2021-11-22 22:32:05,276 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:32:06,284 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:32:08,944 : WARN  : KNIME-Worker-47-Decision Tree Learner 0:16 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:32:09,890 : WARN  : KNIME-Worker-48-Decision Tree Predictor 0:18 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:33:08,805 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:33:14,000 : WARN  : KNIME-Worker-50-Decision Tree Learner 0:25 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:33:15,719 : WARN  : KNIME-Worker-47-Decision Tree Predictor 0:27 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:33:52,241 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:33:53,157 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:34:03,292 : WARN  : KNIME-Worker-50-Decision Tree Learner 0:25 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:34:04,636 : WARN  : KNIME-Worker-47-Decision Tree Predictor 0:27 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:36:53,123 : WARN  : main :  : Node : ROC Curve : 0:35 : Class column 'null ' does not exist
+2021-11-22 22:36:53,125 : WARN  : main :  : Node : ROC Curve : 0:35 : Class column 'null ' does not exist
+2021-11-22 22:38:16,283 : WARN  : main :  : Node : Color Manager : 0:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 22:38:16,673 : WARN  : main :  : Node : Color Manager : 0:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 22:38:51,406 : WARN  : KNIME-Worker-51-CSV Reader 0:28 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:38:54,563 : WARN  : KNIME-Worker-51-Partitioning 0:26 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:38:55,527 : WARN  : KNIME-Worker-54-Decision Tree Learner 0:25 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:38:59,613 : WARN  : KNIME-Worker-51-Decision Tree Predictor 0:27 :  : DataTableSpec : Decision Tree Predictor : 0:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:39:07,243 : ERROR : KNIME-Worker-52-CSV Writer 0:12 :  : Node : CSV Writer : 0:12 : Execute failed: Output file 'C:\Users\1234\Documents\Repositorios\BDATD\hongos_NEW.csv' exists and must not be overwritten due to user settings.
+java.io.IOException: Output file 'C:\Users\1234\Documents\Repositorios\BDATD\hongos_NEW.csv' exists and must not be overwritten due to user settings.
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:217)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.writeToFile(CSVWriter2NodeModel.java:167)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:147)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.execute(CSVWriter2NodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:556)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.nio.file.FileAlreadyExistsException: C:\Users\1234\Documents\Repositorios\BDATD\hongos_NEW.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystemProvider.newByteChannel(LocalFileSystemProvider.java:148)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.newOutputStream(FSFiles.java:137)
+	at org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeModel.createOutputStream(CSVWriter2NodeModel.java:214)
+	... 16 more
+2021-11-22 22:40:26,539 : WARN  : main :  : Node : Color Manager : 0:15 : Column "Attributes" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 22:40:27,163 : WARN  : main :  : Node : Color Manager : 0:15 : Column "Attributes" has no nominal values set: execute predecessor or add Binner.
+2021-11-22 22:41:37,544 : WARN  : KNIME-Worker-55-CSV Reader 0:19 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:41:40,990 : WARN  : KNIME-Worker-58-Partitioning 0:17 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:41:42,129 : WARN  : KNIME-Worker-57-Decision Tree Learner 0:16 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-22 22:41:44,410 : WARN  : KNIME-Worker-55-Decision Tree Predictor 0:18 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-23 00:14:23,941 : WARN  : main :  : Node : ROC Curve (local) : 3:35 : No curves defined
+2021-11-23 00:14:32,397 : WARN  : main :  : WrappedNodeDialog : ROC Curve (local) : 3:35 : failed to apply settings: No value for the positive class chosen
+org.knime.core.node.InvalidSettingsException: No value for the positive class chosen
+	at org.knime.base.node.viz.roc.ROCNodeModel.validateSettings(ROCNodeModel.java:282)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:690)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1100)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:913)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:1976)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1088)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:510)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:935)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:843)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:129)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:184)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-11-23 00:15:53,441 : WARN  : main :  : Node : Simple Regression Tree Learner : 3:37 : No configuration available
+2021-11-23 00:22:11,207 : WARN  : main :  : Node : Regression Predictor : 3:41 : The table for prediction does not contain the column "Name".
+2021-11-23 00:22:19,059 : WARN  : KNIME-Worker-95-Linear Regression Learner 3:40 :  : LinReg2Learner : Linear Regression Learner : 3:40 : Column "Name" has too many different values - will be ignored during training
+2021-11-23 00:22:19,156 : WARN  : KNIME-Worker-95-Linear Regression Learner 3:40 :  : Node : Linear Regression Learner : 3:40 : Column "Name" has too many different values - will be ignored during training
+2021-11-23 00:22:19,236 : WARN  : KNIME-Worker-95-Linear Regression Learner 3:40 :  : Node : Regression Predictor : 3:41 : The table for prediction does not contain the column "Attributes".
+2021-11-23 00:22:27,969 : WARN  : main :  : Node : Regression Predictor : 3:41 : The table for prediction does not contain the column "Attributes".
+2021-11-23 00:22:28,352 : WARN  : main :  : Node : Regression Predictor : 3:41 : The table for prediction does not contain the column "Attributes".
+2021-11-23 00:22:29,888 : WARN  : KNIME-Worker-96-Linear Regression Learner 3:40 :  : Node : Regression Predictor : 3:41 : The table for prediction does not contain the column "Attributes".
+2021-11-23 00:23:05,814 : WARN  : main :  : Node : Scorer : 3:39 : Column 'Prediction (Attributes)' not found.
+2021-11-23 00:23:09,215 : WARN  : KNIME-Worker-97-Regression Predictor 3:41 :  : Node : Scorer : 3:39 : Column 'Prediction (Attributes)' not found.
+2021-11-23 00:23:51,700 : WARN  : main :  : WrappedNodeDialog : Scorer : 3:39 : failed to apply settings: First and second column cannot be the same.
+org.knime.core.node.InvalidSettingsException: First and second column cannot be the same.
+	at org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeDialog.saveSettingsTo(AccuracyScorer2NodeDialog.java:349)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2021-11-23 00:25:06,231 : WARN  : main :  : Node : Random Forest Learner : 3:37 : No configuration available
+2021-11-23 00:25:15,473 : WARN  : main :  : Node : Random Forest Learner : 3:37 : 1 column(s) were ignored due to missing domain information: ["Name"] -- change the node configuration or use a Domain Calculator node to fix it
+2021-11-23 00:25:16,749 : WARN  : main :  : Node : Random Forest Learner : 3:37 : 1 column(s) were ignored due to missing domain information: ["Name"] -- change the node configuration or use a Domain Calculator node to fix it
+2021-11-23 00:25:19,275 : WARN  : KNIME-Worker-103-Random Forest Learner 3:37 :  : Node : Random Forest Learner : 3:37 : 1 column(s) were ignored due to missing domain information: ["Name"] -- change the node configuration or use a Domain Calculator node to fix it
+2021-11-23 00:26:40,285 : WARN  : main :  : Node : Tree Ensemble Learner : 3:40 : No configuration available
+2021-11-23 00:31:48,375 : WARN  : main :  : Node : Random Forest Learner : 3:46 : Target column "Attributes" does not exist or is not of the correct type
+2021-11-23 00:31:50,758 : WARN  : main :  : Node : Tree Ensemble Learner : 3:44 : Target column "Attributes" does not exist or is not of the correct type
+2021-11-23 00:31:58,923 : WARN  : main :  : Node : Scorer : 3:47 : Column 'Attributes' not found.
+2021-11-23 00:32:06,358 : WARN  : main :  : Node : Scorer : 3:43 : Column 'Attributes' not found.
+2021-11-23 00:32:16,850 : WARN  : KNIME-Worker-118-Random Forest Predictor 3:48 :  : Node : Scorer : 3:47 : Column 'Attributes' not found.
+2021-11-23 00:32:18,313 : WARN  : KNIME-Worker-111-Tree Ensemble Predictor 3:45 :  : Node : Scorer : 3:43 : Column 'Attributes' not found.
+2021-11-23 00:50:24,445 : ERROR : KNIME-Worker-119-Histogram 3:49 :  : Node : Histogram : 3:49 : Execute failed: No column selected for binning.
+java.lang.IllegalArgumentException: No column selected for binning.
+	at org.knime.dynamic.js.base.grouped.BinningProcessor.processInputObjects(BinningProcessor.java:72)
+	at org.knime.dynamic.js.v30.DynamicJSNodeModel.performExecuteCreateView(DynamicJSNodeModel.java:655)
+	at org.knime.js.core.node.AbstractImageWizardNodeModel.performExecute(AbstractImageWizardNodeModel.java:102)
+	at org.knime.js.core.node.AbstractWizardNodeModel.execute(AbstractWizardNodeModel.java:136)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:556)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2021-11-23 00:53:05,832 : WARN  : main :  : Node : Numeric Scorer : 3:50 : No columns selected for reference
+2021-11-23 00:53:31,612 : WARN  : main :  : Node : Numeric Scorer : 3:50 : No columns selected for reference
+2021-11-23 00:54:58,352 : WARN  : main :  : Node : Histogram (local) : 3:49 : Please define the binning column.
+2021-11-24 10:30:29,396 : ERROR : main :  : Node : Hierarchical Clustering : 0:9 : Configure failed (IllegalArgumentException): Duplicate column name "Cluster" at positions 8 and 9.
+java.lang.IllegalArgumentException: Duplicate column name "Cluster" at positions 8 and 9.
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:488)
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:459)
+	at org.knime.core.data.DataTableSpec.<init>(DataTableSpec.java:416)
+	at org.knime.base.node.mine.cluster.hierarchical.HierarchicalClusterNodeModel.generateOutSpec(HierarchicalClusterNodeModel.java:677)
+	at org.knime.base.node.mine.cluster.hierarchical.HierarchicalClusterNodeModel.configure(HierarchicalClusterNodeModel.java:599)
+	at org.knime.core.node.NodeModel.configure(NodeModel.java:1134)
+	at org.knime.core.node.NodeModel.configureModel(NodeModel.java:1083)
+	at org.knime.core.node.Node.invokeNodeModelConfigure(Node.java:1957)
+	at org.knime.core.node.Node.configure(Node.java:1893)
+	at org.knime.core.node.workflow.NativeNodeContainer.performConfigure(NativeNodeContainer.java:530)
+	at org.knime.core.node.workflow.SingleNodeContainer.callNodeConfigure(SingleNodeContainer.java:304)
+	at org.knime.core.node.workflow.SingleNodeContainer.configure(SingleNodeContainer.java:189)
+	at org.knime.core.node.workflow.WorkflowManager.configureSingleNodeContainer(WorkflowManager.java:6407)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndPortSuccessors(WorkflowManager.java:6566)
+	at org.knime.core.node.workflow.WorkflowManager.configureNodeAndSuccessors(WorkflowManager.java:6509)
+	at org.knime.core.node.workflow.WorkflowManager.resetAndConfigureNodeAndSuccessors(WorkflowManager.java:5195)
+	at org.knime.core.node.workflow.WorkflowManager.resetAndConfigureNode(WorkflowManager.java:5116)
+	at org.knime.core.node.workflow.WorkflowManager.addConnection(WorkflowManager.java:1243)
+	at org.knime.core.node.workflow.WorkflowManager.addConnection(WorkflowManager.java:1159)
+	at org.knime.core.ui.wrapper.WorkflowManagerWrapper.addConnection(WorkflowManagerWrapper.java:216)
+	at org.knime.workbench.editor2.commands.CreateConnectionCommand.lambda$2(CreateConnectionCommand.java:404)
+	at org.knime.workbench.ui.async.AsyncUtil.wfmAsyncSwitchRethrow(AsyncUtil.java:200)
+	at org.knime.workbench.editor2.commands.CreateConnectionCommand.createConnection(CreateConnectionCommand.java:404)
+	at org.knime.workbench.editor2.commands.CreateConnectionCommand.execute(CreateConnectionCommand.java:331)
+	at org.eclipse.gef.commands.CommandStack.execute(CommandStack.java:228)
+	at org.eclipse.gef.tools.AbstractTool.executeCommand(AbstractTool.java:425)
+	at org.eclipse.gef.tools.AbstractTool.executeCurrentCommand(AbstractTool.java:438)
+	at org.eclipse.gef.tools.AbstractConnectionCreationTool.handleCreateConnection(AbstractConnectionCreationTool.java:256)
+	at org.eclipse.gef.tools.ConnectionDragCreationTool.handleButtonUp(ConnectionDragCreationTool.java:63)
+	at org.eclipse.gef.tools.AbstractTool.mouseUp(AbstractTool.java:1200)
+	at org.eclipse.gef.tools.SelectionTool.mouseUp(SelectionTool.java:574)
+	at org.eclipse.gef.EditDomain.mouseUp(EditDomain.java:301)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseReleased(DomainEventDispatcher.java:380)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseUp(LightweightSystem.java:548)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:224)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:184)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-11-25 22:09:47,531 : WARN  : main :  : Node : Color Manager : 3:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-25 22:09:50,176 : WARN  : KNIME-Worker-5-CSV Reader 3:28 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-25 22:09:53,503 : WARN  : KNIME-Worker-6-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-25 22:09:55,721 : WARN  : KNIME-Worker-6-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-25 22:09:58,476 : WARN  : KNIME-Worker-9-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-25 22:46:43,448 : WARN  : main :  : Node : Color Manager : 3:15 : Column "Attributes" has no nominal values set: execute predecessor or add Binner.
+2021-11-25 22:46:46,846 : WARN  : KNIME-Worker-14-CSV Reader 3:19 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-25 22:46:50,153 : WARN  : KNIME-Worker-20-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-25 22:46:51,396 : WARN  : KNIME-Worker-21-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-25 22:46:54,072 : WARN  : KNIME-Worker-18-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-25 22:54:54,274 : WARN  : ForkJoinPool.commonPool-worker-3 :  : ChromeWizardNodeView :  :  : Unable to retrieve value from view
+2021-11-26 01:07:05,416 : WARN  : main :  : Node : Color Manager : 3:15 : Column "Attributes" has no nominal values set: execute predecessor or add Binner.
+2021-11-26 01:07:07,197 : WARN  : KNIME-Worker-34-CSV Reader 3:19 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:07:09,453 : WARN  : KNIME-Worker-40-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:07:10,322 : WARN  : KNIME-Worker-41-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:07:12,805 : WARN  : KNIME-Worker-38-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:11:02,295 : WARN  : main :  : Node : Color Manager : 3:15 : Column "Attributes" has no nominal values set: execute predecessor or add Binner.
+2021-11-26 01:11:03,671 : WARN  : KNIME-Worker-49-CSV Reader 3:19 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:11:06,434 : WARN  : KNIME-Worker-46-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:11:07,516 : WARN  : KNIME-Worker-48-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:11:10,928 : WARN  : KNIME-Worker-45-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:11:57,858 : WARN  : main :  : Node : Color Manager : 3:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-26 01:11:59,016 : WARN  : KNIME-Worker-49-CSV Reader 3:28 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:12:01,590 : WARN  : KNIME-Worker-45-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:12:02,525 : WARN  : KNIME-Worker-46-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:12:06,677 : WARN  : KNIME-Worker-42-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:13:28,454 : WARN  : main :  : Node : Color Manager : 3:15 : Column "Attributes" has no nominal values set: execute predecessor or add Binner.
+2021-11-26 01:13:33,746 : WARN  : KNIME-Worker-45-CSV Reader 3:19 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:13:36,918 : WARN  : KNIME-Worker-43-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:13:37,874 : WARN  : KNIME-Worker-46-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:13:40,692 : WARN  : KNIME-Worker-47-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:18:11,814 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:18:22,136 : WARN  : KNIME-Worker-60-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:18:48,346 : WARN  : KNIME-Worker-61-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:18:48,373 : WARN  : KNIME-Worker-66-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:18:58,672 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:18:59,331 : WARN  : KNIME-Worker-65-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:19:05,352 : WARN  : KNIME-Worker-64-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:19:05,380 : WARN  : KNIME-Worker-67-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:20:50,229 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:20:52,642 : WARN  : KNIME-Worker-63-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:20:53,596 : WARN  : KNIME-Worker-60-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:20:55,451 : WARN  : KNIME-Worker-66-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:21:08,574 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:21:09,725 : WARN  : KNIME-Worker-62-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:21:12,732 : WARN  : KNIME-Worker-66-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:21:12,857 : WARN  : KNIME-Worker-68-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:21:32,687 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:21:40,994 : WARN  : KNIME-Worker-61-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:21:41,204 : WARN  : KNIME-Worker-64-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:21:44,047 : WARN  : KNIME-Worker-65-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:22:48,649 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:22:48,657 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:22:50,964 : WARN  : KNIME-Worker-65-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:22:50,985 : WARN  : KNIME-Worker-68-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:22:51,017 : WARN  : KNIME-Worker-65-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:22:57,092 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:22:57,100 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:22:58,616 : WARN  : KNIME-Worker-63-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:22:58,630 : WARN  : KNIME-Worker-62-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:22:58,663 : WARN  : KNIME-Worker-66-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:03,226 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:05,340 : WARN  : KNIME-Worker-60-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:10,356 : WARN  : KNIME-Worker-67-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:10,484 : WARN  : KNIME-Worker-65-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:22,637 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:22,645 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:24,289 : WARN  : KNIME-Worker-64-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:24,306 : WARN  : KNIME-Worker-60-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:24,342 : WARN  : KNIME-Worker-61-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:28,100 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:28,108 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:29,233 : WARN  : KNIME-Worker-67-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:29,264 : WARN  : KNIME-Worker-65-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:29,309 : WARN  : KNIME-Worker-67-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:35,295 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:35,304 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:36,299 : WARN  : KNIME-Worker-60-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:36,314 : WARN  : KNIME-Worker-62-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:36,446 : WARN  : KNIME-Worker-62-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:40,912 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:40,921 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:41,939 : WARN  : KNIME-Worker-65-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:41,956 : WARN  : KNIME-Worker-68-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:42,005 : WARN  : KNIME-Worker-60-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:55,389 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:55,397 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:55,400 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:56,264 : WARN  : KNIME-Worker-69-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:56,621 : WARN  : KNIME-Worker-61-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:23:57,749 : WARN  : KNIME-Worker-62-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:24:07,269 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:24:07,281 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:24:07,284 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:24:08,006 : WARN  : KNIME-Worker-68-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:24:08,230 : WARN  : KNIME-Worker-69-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:24:09,691 : WARN  : KNIME-Worker-60-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:29:27,613 : ERROR : KNIME-Worker-81-Tree Ensemble Learner 3:40 :  : Node : Tree Ensemble Learner : 3:40 : Execute failed: upper bound (0) must be greater than lower bound (0)
+org.apache.commons.math.MathRuntimeException$4: upper bound (0) must be greater than lower bound (0)
+	at org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(MathRuntimeException.java:305)
+	at org.apache.commons.math.random.RandomDataImpl.nextInt(RandomDataImpl.java:182)
+	at org.knime.base.node.mine.treeensemble2.sample.row.SubsetWithReplacementSelector.select(SubsetWithReplacementSelector.java:88)
+	at org.knime.base.node.mine.treeensemble2.sample.row.SubsetWithReplacementSelector.select(SubsetWithReplacementSelector.java:1)
+	at org.knime.base.node.mine.treeensemble2.sample.row.StratifiedRowSampler.getSubsets(StratifiedRowSampler.java:98)
+	at org.knime.base.node.mine.treeensemble2.sample.row.AbstractClassificationRowSampler.createRowSample(AbstractClassificationRowSampler.java:91)
+	at org.knime.base.node.mine.treeensemble2.learner.TreeEnsembleLearner$TreeLearnerCallable.call(TreeEnsembleLearner.java:295)
+	at org.knime.base.node.mine.treeensemble2.learner.TreeEnsembleLearner$TreeLearnerCallable.call(TreeEnsembleLearner.java:1)
+	at org.knime.core.util.ThreadUtils$CallableWithContextImpl.callWithContext(ThreadUtils.java:381)
+	at org.knime.core.util.ThreadUtils$CallableWithContext.call(ThreadUtils.java:267)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2021-11-26 01:32:09,579 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:09,590 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:09,811 : WARN  : KNIME-Worker-78-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:09,823 : WARN  : KNIME-Worker-80-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:09,853 : WARN  : KNIME-Worker-82-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:18,681 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:18,692 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:18,925 : WARN  : KNIME-Worker-79-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:19,077 : WARN  : KNIME-Worker-84-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:19,383 : WARN  : KNIME-Worker-83-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:23,123 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:23,131 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:23,380 : WARN  : KNIME-Worker-80-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:23,399 : WARN  : KNIME-Worker-81-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:23,564 : WARN  : KNIME-Worker-84-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:31,901 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:31,908 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:32,247 : WARN  : KNIME-Worker-81-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:32,270 : WARN  : KNIME-Worker-84-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:32,305 : WARN  : KNIME-Worker-87-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:36,009 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:36,019 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:36,304 : WARN  : KNIME-Worker-80-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:36,320 : WARN  : KNIME-Worker-78-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:36,352 : WARN  : KNIME-Worker-78-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:48,117 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:50,775 : WARN  : KNIME-Worker-82-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:50,791 : WARN  : KNIME-Worker-84-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:50,981 : WARN  : KNIME-Worker-84-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:56,617 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:56,629 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:56,786 : WARN  : KNIME-Worker-78-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:56,797 : WARN  : KNIME-Worker-85-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:32:56,933 : WARN  : KNIME-Worker-79-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:33:01,780 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:33:01,788 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:33:02,070 : WARN  : KNIME-Worker-82-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:33:02,093 : WARN  : KNIME-Worker-86-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:33:02,127 : WARN  : KNIME-Worker-85-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:33:06,444 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:33:06,457 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:33:06,792 : WARN  : KNIME-Worker-80-Partitioning 3:17 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:33:06,807 : WARN  : KNIME-Worker-85-Decision Tree Learner 3:16 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:33:06,846 : WARN  : KNIME-Worker-80-Decision Tree Predictor 3:18 :  : DataTableSpec : Decision Tree Predictor : 3:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:35:17,401 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:35:17,836 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:35:20,949 : WARN  : KNIME-Worker-82-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:35:21,226 : WARN  : KNIME-Worker-84-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:35:22,792 : WARN  : KNIME-Worker-85-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:35:28,533 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:35:28,544 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:35:28,548 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:35:29,058 : WARN  : KNIME-Worker-83-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:35:29,389 : WARN  : KNIME-Worker-81-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:35:30,719 : WARN  : KNIME-Worker-83-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 01:45:30,789 : WARN  : main :  : Node : Hierarchical Clustering : 0:35 : Column 'Attack_Points' does not exist in input table
+2021-11-26 02:36:27,619 : WARN  : main :  : Node : Color Manager : 3:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-26 02:36:37,568 : WARN  : KNIME-Worker-90-CSV Reader 3:28 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 02:36:37,632 : WARN  : KNIME-Worker-96-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 02:36:37,744 : WARN  : KNIME-Worker-97-Decision Tree Learner 3:25 :  : Node : Decision Tree Learner : 3:25 : 1807 rows removed due to missing class value;
+2021-11-26 02:36:37,932 : WARN  : KNIME-Worker-97-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 02:36:39,381 : WARN  : KNIME-Worker-92-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 02:36:40,632 : WARN  : KNIME-Worker-92-Scorer 3:21 :  : Node : Scorer : 3:21 : There were missing values in the reference or in the prediction class columns.
+2021-11-26 02:36:43,204 : WARN  : KNIME-Worker-98-Random Forest Learner 3:46 :  : Node : Random Forest Learner : 3:46 : 1807/5227 row(s) were ignored because they contain missing values.
+2021-11-26 02:36:43,736 : WARN  : KNIME-Worker-96-Scorer 3:47 :  : Node : Scorer : 3:47 : There were missing values in the reference or in the prediction class columns.
+2021-11-26 02:37:25,621 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 02:37:25,965 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 02:37:39,258 : WARN  : KNIME-Worker-99-Decision Tree Learner 3:25 :  : Node : Decision Tree Learner : 3:25 : 1807 rows removed due to missing class value;
+2021-11-26 02:37:39,441 : WARN  : KNIME-Worker-99-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 02:37:42,539 : WARN  : KNIME-Worker-91-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-26 02:37:55,679 : WARN  : KNIME-Worker-92-Scorer 3:21 :  : Node : Scorer : 3:21 : There were missing values in the reference or in the prediction class columns.
+2021-11-26 02:40:06,122 : WARN  : main :  : Node : Color Manager : 3:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-26 02:40:06,451 : WARN  : main :  : Node : Color Manager : 3:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-26 12:53:12,050 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 12:54:30,480 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 12:54:35,692 : WARN  : KNIME-Worker-8-k-Means 0:22 :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 12:57:20,502 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 12:57:20,528 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values and bounds missing.
+2021-11-26 12:57:21,489 : WARN  : KNIME-Worker-11-CSV Reader 0:19 :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values and bounds missing.
+2021-11-26 12:57:21,530 : WARN  : KNIME-Worker-12-Category To Number 0:20 :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values and bounds missing.
+2021-11-26 12:57:21,594 : WARN  : KNIME-Worker-13-Normalizer 0:21 :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 12:57:21,693 : WARN  : KNIME-Worker-14-k-Means 0:22 :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 13:10:45,205 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 13:10:45,831 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 13:10:55,410 : WARN  : KNIME-Worker-16-k-Means 0:22 :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 13:29:54,327 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 13:29:59,706 : WARN  : KNIME-Worker-21-k-Means 0:22 :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 13:35:56,908 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 13:36:00,836 : WARN  : KNIME-Worker-26-k-Means 0:22 :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 13:52:10,394 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 13:52:10,870 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 13:52:14,941 : WARN  : KNIME-Worker-31-k-Means 0:22 :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 14:46:27,821 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 14:46:28,367 : WARN  : main :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-26 14:46:32,172 : WARN  : KNIME-Worker-36-k-Means 0:22 :  : Node : Scatter Matrix (local) : 0:37 : Some columns are ignored: too many/missing nominal values.
+2021-11-29 09:33:22,503 : WARN  : main :  : Node : Color Manager : 0:15 : Column "Attributes" not found.
+2021-11-29 09:33:23,123 : WARN  : main :  : Node : Color Manager : 0:15 : Column "Attributes" not found.
+2021-11-29 09:33:26,676 : WARN  : KNIME-Worker-5-CSV Reader 0:19 :  : Node : Color Manager : 0:15 : Column "Attributes" not found.
+2021-11-29 09:33:38,153 : WARN  : main :  : Node : Partitioning : 0:17 : Column 'Attributes' for stratified sampling does not exist
+2021-11-29 09:33:38,684 : WARN  : main :  : Node : Partitioning : 0:17 : Column 'Attributes' for stratified sampling does not exist
+2021-11-29 09:34:00,484 : WARN  : KNIME-Worker-5-Color Manager 0:15 :  : Node : Partitioning : 0:17 : Column 'Attributes' for stratified sampling does not exist
+2021-11-29 09:34:18,392 : WARN  : main :  : Node : Decision Tree Learner : 0:16 : Class column "Attributes" not found or incompatible
+2021-11-29 09:34:18,393 : WARN  : main :  : Node : Random Forest Learner : 0:37 : Target column "Attributes" does not exist or is not of the correct type
+2021-11-29 09:34:18,393 : WARN  : main :  : Node : Tree Ensemble Learner : 0:40 : Target column "Attributes" does not exist or is not of the correct type
+2021-11-29 09:34:18,805 : WARN  : main :  : Node : Decision Tree Learner : 0:16 : Class column "Attributes" not found or incompatible
+2021-11-29 09:34:18,806 : WARN  : main :  : Node : Random Forest Learner : 0:37 : Target column "Attributes" does not exist or is not of the correct type
+2021-11-29 09:34:18,807 : WARN  : main :  : Node : Tree Ensemble Learner : 0:40 : Target column "Attributes" does not exist or is not of the correct type
+2021-11-29 09:34:19,514 : WARN  : KNIME-Worker-8-Partitioning 0:17 :  : Node : Decision Tree Learner : 0:16 : Class column "Attributes" not found or incompatible
+2021-11-29 09:34:19,515 : WARN  : KNIME-Worker-8-Partitioning 0:17 :  : Node : Random Forest Learner : 0:37 : Target column "Attributes" does not exist or is not of the correct type
+2021-11-29 09:34:19,516 : WARN  : KNIME-Worker-8-Partitioning 0:17 :  : Node : Tree Ensemble Learner : 0:40 : Target column "Attributes" does not exist or is not of the correct type
+2021-11-29 09:34:25,156 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-29 09:34:25,158 : WARN  : main :  : Node : Scorer : 0:13 : Column 'Attributes' not found.
+2021-11-29 09:34:26,896 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-29 09:34:26,897 : WARN  : main :  : Node : Scorer : 0:13 : Column 'Attributes' not found.
+2021-11-29 09:34:28,330 : WARN  : KNIME-Worker-9-Decision Tree Learner 0:16 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-29 09:34:45,112 : ERROR : SwingWorker-pool-9-thread-1 :  : StatusSwingWorker : PMML Writer : 0:20 : Error while updating status message: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/DT_Yu-Gi-Oh.pmml
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/DT_Yu-Gi-Oh.pmml
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:120)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:1)
+	at org.knime.filehandling.core.connections.FSFileSystem.getPath(FSFileSystem.java:326)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getPathFromConvenienceFs(FileChooserPathAccessor.java:193)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:174)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:122)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2021-11-29 09:34:49,337 : ERROR : SwingWorker-pool-9-thread-4 :  : StatusSwingWorker : PMML Writer : 0:20 : Error while updating status message: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/C.pmml
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/C.pmml
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:120)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:1)
+	at org.knime.filehandling.core.connections.FSFileSystem.getPath(FSFileSystem.java:326)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getPathFromConvenienceFs(FileChooserPathAccessor.java:193)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:174)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:122)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2021-11-29 09:34:49,711 : ERROR : SwingWorker-pool-9-thread-2 :  : StatusSwingWorker : PMML Writer : 0:20 : Error while updating status message: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/Cus.pmml
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/Cus.pmml
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:120)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:1)
+	at org.knime.filehandling.core.connections.FSFileSystem.getPath(FSFileSystem.java:326)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getPathFromConvenienceFs(FileChooserPathAccessor.java:193)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:174)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:122)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2021-11-29 09:34:50,318 : ERROR : SwingWorker-pool-9-thread-9 :  : StatusSwingWorker : PMML Writer : 0:20 : Error while updating status message: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/Customer.pmml
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/Customer.pmml
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:120)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:1)
+	at org.knime.filehandling.core.connections.FSFileSystem.getPath(FSFileSystem.java:326)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getPathFromConvenienceFs(FileChooserPathAccessor.java:193)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:174)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:122)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2021-11-29 09:34:50,674 : ERROR : SwingWorker-pool-9-thread-1 :  : StatusSwingWorker : PMML Writer : 0:20 : Error while updating status message: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerI.pmml
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerI.pmml
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:120)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:1)
+	at org.knime.filehandling.core.connections.FSFileSystem.getPath(FSFileSystem.java:326)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getPathFromConvenienceFs(FileChooserPathAccessor.java:193)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:174)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:122)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2021-11-29 09:34:51,394 : ERROR : SwingWorker-pool-9-thread-6 :  : StatusSwingWorker : PMML Writer : 0:20 : Error while updating status message: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInforma.pmml
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInforma.pmml
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:120)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:1)
+	at org.knime.filehandling.core.connections.FSFileSystem.getPath(FSFileSystem.java:326)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getPathFromConvenienceFs(FileChooserPathAccessor.java:193)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:174)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:122)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2021-11-29 09:34:51,982 : ERROR : SwingWorker-pool-9-thread-1 :  : StatusSwingWorker : PMML Writer : 0:20 : Error while updating status message: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInformation.pmml
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInformation.pmml
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:120)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:1)
+	at org.knime.filehandling.core.connections.FSFileSystem.getPath(FSFileSystem.java:326)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getPathFromConvenienceFs(FileChooserPathAccessor.java:193)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:174)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:122)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2021-11-29 09:35:07,447 : ERROR : KNIME-Worker-10-PMML Writer 0:20 :  : Node : PMML Writer : 0:20 : Execute failed: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInformation.pmml
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInformation.pmml
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:120)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:1)
+	at org.knime.filehandling.core.connections.FSFileSystem.getPath(FSFileSystem.java:326)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getPathFromConvenienceFs(FileChooserPathAccessor.java:193)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:174)
+	at org.knime.filehandling.core.node.portobject.writer.PortObjectToPathWriterNodeModel.execute(PortObjectToPathWriterNodeModel.java:84)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:556)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2021-11-29 09:35:21,738 : ERROR : SwingWorker-pool-9-thread-2 :  : StatusSwingWorker : PMML Writer : 0:20 : Error while updating status message: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInformation.pmml
+java.nio.file.InvalidPathException: Illegal char <:> at index 4: file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInformation.pmml
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:120)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystem.getPath(LocalFileSystem.java:1)
+	at org.knime.filehandling.core.connections.FSFileSystem.getPath(FSFileSystem.java:326)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getPathFromConvenienceFs(FileChooserPathAccessor.java:193)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:174)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:122)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2021-11-29 09:35:32,904 : WARN  : KNIME-Worker-9-Decision Tree Predictor 0:18 :  : DataTableSpec : Decision Tree Predictor : 0:18 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-29 09:35:32,931 : WARN  : KNIME-Worker-9-Decision Tree Predictor 0:18 :  : Node : Scorer : 0:13 : Column 'Attributes' not found.
+2021-11-29 09:42:17,371 : WARN  : main :  : Node : Linear Correlation : 0:36 : Auto configuration: Using all suitable columns (in total 13)
+2021-11-29 09:46:56,447 : WARN  : main :  : Node : Entropy Scorer : 0:37 : No auto configuration available
+Please configure in dialog.
+2021-11-29 09:57:28,103 : WARN  : main :  : Node : Hierarchical Clustering : 3:9 : Column 'Level' does not exist in input table
+2021-11-29 09:57:28,585 : WARN  : main :  : Node : Hierarchical Clustering : 3:9 : Column 'Level' does not exist in input table
+2021-11-29 09:58:14,380 : WARN  : main :  : Node : Hierarchical Clustering : 3:9 : Column 'Level' does not exist in input table
+2021-11-29 09:58:15,113 : WARN  : main :  : Node : Hierarchical Clustering : 3:9 : Column 'Level' does not exist in input table
+2021-11-29 09:58:39,702 : WARN  : main :  : Node : Hierarchical Clustering : 3:9 : Column 'Level' does not exist in input table
+2021-11-29 09:58:40,086 : WARN  : main :  : Node : Hierarchical Clustering : 3:9 : Column 'Level' does not exist in input table
+2021-11-29 10:05:44,859 : WARN  : KNIME-Worker-21-Hierarchical Clustering 3:9 :  : Node : Hierarchical Clustering : 3:9 : Execution canceled

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PMML version="4.2" xmlns="http://www.dmg.org/PMML-4_2">
+  <Header copyright="1234">
+    <Application name="KNIME" version="4.4.1"/>
+  </Header>
+  <DataDictionary numberOfFields="12">
+    <DataField name="id" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="1.0" rightMargin="8123.0"/>
+    </DataField>
+    <DataField name="classes" optype="categorical" dataType="string">
+      <Value value="edible"/>
+      <Value value="poisonous"/>
+    </DataField>
+    <DataField name="shape" optype="categorical" dataType="string">
+      <Value value="convex"/>
+      <Value value="bell"/>
+      <Value value="sunken"/>
+      <Value value="flat"/>
+      <Value value="knobbed"/>
+      <Value value="conical"/>
+    </DataField>
+    <DataField name="surface" optype="categorical" dataType="string">
+      <Value value="smooth"/>
+      <Value value="scaly"/>
+      <Value value="fibrous"/>
+      <Value value="grooves"/>
+    </DataField>
+    <DataField name="color" optype="categorical" dataType="string">
+      <Value value="yellow"/>
+      <Value value="white"/>
+      <Value value="gray"/>
+      <Value value="brown"/>
+      <Value value="red"/>
+      <Value value="pink"/>
+      <Value value="buff"/>
+      <Value value="purple"/>
+      <Value value="cinnamon"/>
+      <Value value="green"/>
+    </DataField>
+    <DataField name="bruises" optype="categorical" dataType="string">
+      <Value value="bruises"/>
+      <Value value="no"/>
+    </DataField>
+    <DataField name="odor" optype="categorical" dataType="string">
+      <Value value="almond"/>
+      <Value value="anise"/>
+      <Value value="pungent"/>
+      <Value value="none"/>
+      <Value value="foul"/>
+      <Value value="creosote"/>
+      <Value value="fishy"/>
+      <Value value="spicy"/>
+      <Value value="musty"/>
+    </DataField>
+    <DataField name="ring-number" optype="categorical" dataType="string">
+      <Value value="one"/>
+      <Value value="two"/>
+      <Value value="none"/>
+    </DataField>
+    <DataField name="ring-type" optype="categorical" dataType="string">
+      <Value value="pendant"/>
+      <Value value="evanescent"/>
+      <Value value="large"/>
+      <Value value="flaring"/>
+      <Value value="none"/>
+    </DataField>
+    <DataField name="spore-print-color" optype="categorical" dataType="string">
+      <Value value="brown"/>
+      <Value value="black"/>
+      <Value value="purple"/>
+      <Value value="chocolate"/>
+      <Value value="white"/>
+      <Value value="green"/>
+      <Value value="orange"/>
+      <Value value="yellow"/>
+      <Value value="buff"/>
+    </DataField>
+    <DataField name="population" optype="categorical" dataType="string">
+      <Value value="numerous"/>
+      <Value value="scattered"/>
+      <Value value="abundant"/>
+      <Value value="several"/>
+      <Value value="solitary"/>
+      <Value value="clustered"/>
+    </DataField>
+    <DataField name="habitat" optype="categorical" dataType="string">
+      <Value value="grasses"/>
+      <Value value="meadows"/>
+      <Value value="urban"/>
+      <Value value="woods"/>
+      <Value value="paths"/>
+      <Value value="waste"/>
+      <Value value="leaves"/>
+    </DataField>
+  </DataDictionary>
+  <TreeModel modelName="DecisionTree" functionName="classification" splitCharacteristic="multiSplit" missingValueStrategy="lastPrediction" noTrueChildStrategy="returnNullPrediction">
+    <MiningSchema>
+      <MiningField name="id" invalidValueTreatment="asIs"/>
+      <MiningField name="shape" invalidValueTreatment="asIs"/>
+      <MiningField name="surface" invalidValueTreatment="asIs"/>
+      <MiningField name="color" invalidValueTreatment="asIs"/>
+      <MiningField name="bruises" invalidValueTreatment="asIs"/>
+      <MiningField name="odor" invalidValueTreatment="asIs"/>
+      <MiningField name="ring-number" invalidValueTreatment="asIs"/>
+      <MiningField name="ring-type" invalidValueTreatment="asIs"/>
+      <MiningField name="spore-print-color" invalidValueTreatment="asIs"/>
+      <MiningField name="population" invalidValueTreatment="asIs"/>
+      <MiningField name="habitat" invalidValueTreatment="asIs"/>
+      <MiningField name="classes" invalidValueTreatment="asIs" usageType="target"/>
+    </MiningSchema>
+    <Node id="0" score="edible" recordCount="6498.0">
+      <True/>
+      <ScoreDistribution value="edible" recordCount="3366.0"/>
+      <ScoreDistribution value="poisonous" recordCount="3132.0"/>
+      <Node id="1" score="edible" recordCount="320.0">
+        <SimplePredicate field="odor" operator="equal" value="anise"/>
+        <ScoreDistribution value="edible" recordCount="320.0"/>
+        <ScoreDistribution value="poisonous" recordCount="0.0"/>
+      </Node>
+      <Node id="2" score="poisonous" recordCount="215.0">
+        <SimplePredicate field="odor" operator="equal" value="pungent"/>
+        <ScoreDistribution value="edible" recordCount="0.0"/>
+        <ScoreDistribution value="poisonous" recordCount="215.0"/>
+      </Node>
+      <Node id="3" score="edible" recordCount="321.0">
+        <SimplePredicate field="odor" operator="equal" value="almond"/>
+        <ScoreDistribution value="edible" recordCount="321.0"/>
+        <ScoreDistribution value="poisonous" recordCount="0.0"/>
+      </Node>
+      <Node id="8" score="edible" recordCount="2825.0">
+        <SimplePredicate field="odor" operator="equal" value="none"/>
+        <ScoreDistribution value="edible" recordCount="2725.0"/>
+        <ScoreDistribution value="poisonous" recordCount="100.0"/>
+        <Node id="9" score="edible" recordCount="1084.0">
+          <SimplePredicate field="spore-print-color" operator="equal" value="brown"/>
+          <ScoreDistribution value="edible" recordCount="1084.0"/>
+          <ScoreDistribution value="poisonous" recordCount="0.0"/>
+        </Node>
+        <Node id="10" score="edible" recordCount="1033.0">
+          <SimplePredicate field="spore-print-color" operator="equal" value="black"/>
+          <ScoreDistribution value="edible" recordCount="1033.0"/>
+          <ScoreDistribution value="poisonous" recordCount="0.0"/>
+        </Node>
+        <Node id="13" score="edible" recordCount="39.0">
+          <SimplePredicate field="spore-print-color" operator="equal" value="chocolate"/>
+          <ScoreDistribution value="edible" recordCount="39.0"/>
+          <ScoreDistribution value="poisonous" recordCount="0.0"/>
+        </Node>
+        <Node id="14" score="edible" recordCount="488.0">
+          <SimplePredicate field="spore-print-color" operator="equal" value="white"/>
+          <ScoreDistribution value="edible" recordCount="450.0"/>
+          <ScoreDistribution value="poisonous" recordCount="38.0"/>
+          <Node id="17" score="edible" recordCount="222.0">
+            <SimplePredicate field="habitat" operator="equal" value="grasses"/>
+            <ScoreDistribution value="edible" recordCount="222.0"/>
+            <ScoreDistribution value="poisonous" recordCount="0.0"/>
+          </Node>
+          <Node id="18" score="edible" recordCount="32.0">
+            <SimplePredicate field="habitat" operator="equal" value="paths"/>
+            <ScoreDistribution value="edible" recordCount="32.0"/>
+            <ScoreDistribution value="poisonous" recordCount="0.0"/>
+          </Node>
+          <Node id="19" score="poisonous" recordCount="31.0">
+            <SimplePredicate field="habitat" operator="equal" value="woods"/>
+            <ScoreDistribution value="edible" recordCount="7.0"/>
+            <ScoreDistribution value="poisonous" recordCount="24.0"/>
+            <Node id="22" score="poisonous" recordCount="24.0">
+              <SimplePredicate field="population" operator="equal" value="several"/>
+              <ScoreDistribution value="edible" recordCount="0.0"/>
+              <ScoreDistribution value="poisonous" recordCount="24.0"/>
+            </Node>
+            <Node id="24" score="edible" recordCount="7.0">
+              <SimplePredicate field="population" operator="equal" value="solitary"/>
+              <ScoreDistribution value="edible" recordCount="7.0"/>
+              <ScoreDistribution value="poisonous" recordCount="0.0"/>
+            </Node>
+          </Node>
+          <Node id="26" score="edible" recordCount="150.0">
+            <SimplePredicate field="habitat" operator="equal" value="waste"/>
+            <ScoreDistribution value="edible" recordCount="150.0"/>
+            <ScoreDistribution value="poisonous" recordCount="0.0"/>
+          </Node>
+          <Node id="27" score="edible" recordCount="53.0">
+            <SimplePredicate field="habitat" operator="equal" value="leaves"/>
+            <ScoreDistribution value="edible" recordCount="39.0"/>
+            <ScoreDistribution value="poisonous" recordCount="14.0"/>
+            <Node id="30" score="edible" recordCount="39.0">
+              <SimplePredicate field="population" operator="equal" value="several"/>
+              <ScoreDistribution value="edible" recordCount="39.0"/>
+              <ScoreDistribution value="poisonous" recordCount="0.0"/>
+            </Node>
+            <Node id="33" score="poisonous" recordCount="14.0">
+              <SimplePredicate field="population" operator="equal" value="clustered"/>
+              <ScoreDistribution value="edible" recordCount="0.0"/>
+              <ScoreDistribution value="poisonous" recordCount="14.0"/>
+            </Node>
+          </Node>
+        </Node>
+        <Node id="34" score="poisonous" recordCount="62.0">
+          <SimplePredicate field="spore-print-color" operator="equal" value="green"/>
+          <ScoreDistribution value="edible" recordCount="0.0"/>
+          <ScoreDistribution value="poisonous" recordCount="62.0"/>
+        </Node>
+        <Node id="35" score="edible" recordCount="41.0">
+          <SimplePredicate field="spore-print-color" operator="equal" value="orange"/>
+          <ScoreDistribution value="edible" recordCount="41.0"/>
+          <ScoreDistribution value="poisonous" recordCount="0.0"/>
+        </Node>
+        <Node id="36" score="edible" recordCount="40.0">
+          <SimplePredicate field="spore-print-color" operator="equal" value="yellow"/>
+          <ScoreDistribution value="edible" recordCount="40.0"/>
+          <ScoreDistribution value="poisonous" recordCount="0.0"/>
+        </Node>
+        <Node id="37" score="edible" recordCount="38.0">
+          <SimplePredicate field="spore-print-color" operator="equal" value="buff"/>
+          <ScoreDistribution value="edible" recordCount="38.0"/>
+          <ScoreDistribution value="poisonous" recordCount="0.0"/>
+        </Node>
+      </Node>
+      <Node id="11" score="poisonous" recordCount="1727.0">
+        <SimplePredicate field="odor" operator="equal" value="foul"/>
+        <ScoreDistribution value="edible" recordCount="0.0"/>
+        <ScoreDistribution value="poisonous" recordCount="1727.0"/>
+      </Node>
+      <Node id="4" score="poisonous" recordCount="159.0">
+        <SimplePredicate field="odor" operator="equal" value="creosote"/>
+        <ScoreDistribution value="edible" recordCount="0.0"/>
+        <ScoreDistribution value="poisonous" recordCount="159.0"/>
+      </Node>
+      <Node id="5" score="poisonous" recordCount="438.0">
+        <SimplePredicate field="odor" operator="equal" value="fishy"/>
+        <ScoreDistribution value="edible" recordCount="0.0"/>
+        <ScoreDistribution value="poisonous" recordCount="438.0"/>
+      </Node>
+      <Node id="6" score="poisonous" recordCount="464.0">
+        <SimplePredicate field="odor" operator="equal" value="spicy"/>
+        <ScoreDistribution value="edible" recordCount="0.0"/>
+        <ScoreDistribution value="poisonous" recordCount="464.0"/>
+      </Node>
+      <Node id="7" score="poisonous" recordCount="29.0">
+        <SimplePredicate field="odor" operator="equal" value="musty"/>
+        <ScoreDistribution value="edible" recordCount="0.0"/>
+        <ScoreDistribution value="poisonous" recordCount="29.0"/>
+      </Node>
+    </Node>
+  </TreeModel>
+</PMML>

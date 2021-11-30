@@ -1,0 +1,10 @@
+C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInformation.pmml
+file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInformation.pmml
+C:\Users\1234\Documents\Repositorios\BDATD\P5\Yu-Gi-Oh_small/DT_Yu-Gi-Oh.pmml
+C:\Users\1234\Documents\Repositorios\BDATD\P5/Yu-Gi-Oh_small/DT_Yu-Gi-Oh.pmml
+C:\Users\1234\Documents\Repositorios\BDATD\P5/Yu-Gi-Oh_big\DT_Yu-Gi-Oh_big.pmml
+C:\Users\1234\Documents\Repositorios\BDATD\P5/Yu-Gi-Oh_big/DT_Yu-Gi-Oh_big.pmml
+C:\Users\1234\Documents\Repositorios\BDATD\P5\DT_Yu-Gi-Oh_big.pmml
+C:\Users\1234\Documents\Repositorios\BDATD\P5\DT_Yu-Gi-Oh.pmml
+C:\Users\1234\Documents\Repositorios\BDATD\P5/DT_Yu-Gi-Oh_big.pmml
+C:\Users\1234\Documents\Repositorios\BDATD\P5/DT_Yu-Gi-Oh.pmml

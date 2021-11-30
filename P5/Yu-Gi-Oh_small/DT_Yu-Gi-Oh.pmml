@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PMML version="4.2" xmlns="http://www.dmg.org/PMML-4_2">
+  <Header copyright="1234">
+    <Application name="KNIME" version="4.4.1"/>
+  </Header>
+  <DataDictionary numberOfFields="6">
+    <DataField name="Name" optype="categorical" dataType="string"/>
+    <DataField name="Attributes" optype="categorical" dataType="string">
+      <Value value="Water"/>
+      <Value value="Earth"/>
+      <Value value="Fire"/>
+      <Value value="Light"/>
+      <Value value="Dark"/>
+      <Value value="Wind"/>
+      <Value value="Divine"/>
+    </DataField>
+    <DataField name="Sub-Types" optype="categorical" dataType="string">
+      <Value value="Fish"/>
+      <Value value="Machine"/>
+      <Value value="Fairy"/>
+      <Value value="Dragon"/>
+      <Value value="Reptile"/>
+      <Value value="Insect"/>
+      <Value value="Beast"/>
+      <Value value="Rock"/>
+      <Value value="Fiend"/>
+      <Value value="Spellcaster"/>
+      <Value value="Warrior"/>
+      <Value value="Dinosaur"/>
+      <Value value="Aqua"/>
+      <Value value="Zombie"/>
+      <Value value="Sea"/>
+      <Value value="Plant"/>
+      <Value value="Cyberse"/>
+      <Value value="Pyro"/>
+      <Value value="Winged"/>
+      <Value value="Thunder"/>
+      <Value value="Psychic"/>
+      <Value value="Wyrm"/>
+      <Value value="Divine"/>
+    </DataField>
+    <DataField name="Level" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="1.0" rightMargin="10.0"/>
+    </DataField>
+    <DataField name="Attack_Points" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="4000.0"/>
+    </DataField>
+    <DataField name="Defense_Points" optype="continuous" dataType="integer">
+      <Interval closure="closedClosed" leftMargin="0.0" rightMargin="4000.0"/>
+    </DataField>
+  </DataDictionary>
+  <TreeModel modelName="DecisionTree" functionName="classification" splitCharacteristic="multiSplit" missingValueStrategy="lastPrediction" noTrueChildStrategy="returnLastPrediction">
+    <MiningSchema>
+      <MiningField name="Name" invalidValueTreatment="asIs"/>
+      <MiningField name="Sub-Types" invalidValueTreatment="asIs"/>
+      <MiningField name="Level" invalidValueTreatment="asIs"/>
+      <MiningField name="Attack_Points" invalidValueTreatment="asIs"/>
+      <MiningField name="Defense_Points" invalidValueTreatment="asIs"/>
+      <MiningField name="Attributes" invalidValueTreatment="asIs" usageType="target"/>
+    </MiningSchema>
+    <Node id="0" score="Earth" recordCount="318.0">
+      <True/>
+      <ScoreDistribution value="Water" recordCount="42.0"/>
+      <ScoreDistribution value="Fire" recordCount="22.0"/>
+      <ScoreDistribution value="Light" recordCount="37.0"/>
+      <ScoreDistribution value="Earth" recordCount="119.0"/>
+      <ScoreDistribution value="Dark" recordCount="70.0"/>
+      <ScoreDistribution value="Wind" recordCount="28.0"/>
+      <Node id="1" score="Water" recordCount="10.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Fish"/>
+        <ScoreDistribution value="Water" recordCount="8.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="1.0"/>
+        <ScoreDistribution value="Dark" recordCount="0.0"/>
+        <ScoreDistribution value="Wind" recordCount="1.0"/>
+        <Node id="2" score="Earth" recordCount="2.0">
+          <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="650.0"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="0.0"/>
+          <ScoreDistribution value="Earth" recordCount="1.0"/>
+          <ScoreDistribution value="Dark" recordCount="0.0"/>
+          <ScoreDistribution value="Wind" recordCount="1.0"/>
+        </Node>
+        <Node id="3" score="Water" recordCount="8.0">
+          <SimplePredicate field="Defense_Points" operator="greaterThan" value="650.0"/>
+          <ScoreDistribution value="Water" recordCount="8.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="0.0"/>
+          <ScoreDistribution value="Earth" recordCount="0.0"/>
+          <ScoreDistribution value="Dark" recordCount="0.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+        </Node>
+      </Node>
+      <Node id="4" score="Light" recordCount="17.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Fairy"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="1.0"/>
+        <ScoreDistribution value="Light" recordCount="13.0"/>
+        <ScoreDistribution value="Earth" recordCount="0.0"/>
+        <ScoreDistribution value="Dark" recordCount="1.0"/>
+        <ScoreDistribution value="Wind" recordCount="2.0"/>
+        <Node id="5" score="Wind" recordCount="4.0">
+          <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="350.0"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="1.0"/>
+          <ScoreDistribution value="Light" recordCount="1.0"/>
+          <ScoreDistribution value="Earth" recordCount="0.0"/>
+          <ScoreDistribution value="Dark" recordCount="0.0"/>
+          <ScoreDistribution value="Wind" recordCount="2.0"/>
+        </Node>
+        <Node id="8" score="Light" recordCount="13.0">
+          <SimplePredicate field="Defense_Points" operator="greaterThan" value="350.0"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="12.0"/>
+          <ScoreDistribution value="Earth" recordCount="0.0"/>
+          <ScoreDistribution value="Dark" recordCount="1.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+        </Node>
+      </Node>
+      <Node id="13" score="Wind" recordCount="22.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Dragon"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="1.0"/>
+        <ScoreDistribution value="Light" recordCount="6.0"/>
+        <ScoreDistribution value="Earth" recordCount="2.0"/>
+        <ScoreDistribution value="Dark" recordCount="4.0"/>
+        <ScoreDistribution value="Wind" recordCount="9.0"/>
+        <Node id="14" score="Wind" recordCount="15.0">
+          <SimplePredicate field="Level" operator="lessOrEqual" value="6.5"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="2.0"/>
+          <ScoreDistribution value="Earth" recordCount="2.0"/>
+          <ScoreDistribution value="Dark" recordCount="2.0"/>
+          <ScoreDistribution value="Wind" recordCount="9.0"/>
+          <Node id="15" score="Wind" recordCount="6.0">
+            <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="1350.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="0.0"/>
+            <ScoreDistribution value="Earth" recordCount="0.0"/>
+            <ScoreDistribution value="Dark" recordCount="0.0"/>
+            <ScoreDistribution value="Wind" recordCount="6.0"/>
+          </Node>
+          <Node id="16" score="Wind" recordCount="9.0">
+            <SimplePredicate field="Attack_Points" operator="greaterThan" value="1350.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="2.0"/>
+            <ScoreDistribution value="Earth" recordCount="2.0"/>
+            <ScoreDistribution value="Dark" recordCount="2.0"/>
+            <ScoreDistribution value="Wind" recordCount="3.0"/>
+            <Node id="17" score="Light" recordCount="3.0">
+              <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1150.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="2.0"/>
+              <ScoreDistribution value="Earth" recordCount="0.0"/>
+              <ScoreDistribution value="Dark" recordCount="1.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+            </Node>
+            <Node id="18" score="Wind" recordCount="6.0">
+              <SimplePredicate field="Defense_Points" operator="greaterThan" value="1150.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="2.0"/>
+              <ScoreDistribution value="Dark" recordCount="1.0"/>
+              <ScoreDistribution value="Wind" recordCount="3.0"/>
+              <Node id="19" score="Earth" recordCount="2.0">
+                <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="1850.0"/>
+                <ScoreDistribution value="Water" recordCount="0.0"/>
+                <ScoreDistribution value="Fire" recordCount="0.0"/>
+                <ScoreDistribution value="Light" recordCount="0.0"/>
+                <ScoreDistribution value="Earth" recordCount="2.0"/>
+                <ScoreDistribution value="Dark" recordCount="0.0"/>
+                <ScoreDistribution value="Wind" recordCount="0.0"/>
+              </Node>
+              <Node id="20" score="Wind" recordCount="4.0">
+                <SimplePredicate field="Attack_Points" operator="greaterThan" value="1850.0"/>
+                <ScoreDistribution value="Water" recordCount="0.0"/>
+                <ScoreDistribution value="Fire" recordCount="0.0"/>
+                <ScoreDistribution value="Light" recordCount="0.0"/>
+                <ScoreDistribution value="Earth" recordCount="0.0"/>
+                <ScoreDistribution value="Dark" recordCount="1.0"/>
+                <ScoreDistribution value="Wind" recordCount="3.0"/>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+        <Node id="23" score="Light" recordCount="7.0">
+          <SimplePredicate field="Level" operator="greaterThan" value="6.5"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="1.0"/>
+          <ScoreDistribution value="Light" recordCount="4.0"/>
+          <ScoreDistribution value="Earth" recordCount="0.0"/>
+          <ScoreDistribution value="Dark" recordCount="2.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+          <Node id="24" score="Light" recordCount="5.0">
+            <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="2450.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="1.0"/>
+            <ScoreDistribution value="Light" recordCount="2.0"/>
+            <ScoreDistribution value="Earth" recordCount="0.0"/>
+            <ScoreDistribution value="Dark" recordCount="2.0"/>
+            <ScoreDistribution value="Wind" recordCount="0.0"/>
+            <Node id="25" score="Light" recordCount="2.0">
+              <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="2150.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="2.0"/>
+              <ScoreDistribution value="Earth" recordCount="0.0"/>
+              <ScoreDistribution value="Dark" recordCount="0.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+            </Node>
+            <Node id="26" score="Dark" recordCount="3.0">
+              <SimplePredicate field="Attack_Points" operator="greaterThan" value="2150.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="1.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="0.0"/>
+              <ScoreDistribution value="Dark" recordCount="2.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+            </Node>
+          </Node>
+          <Node id="27" score="Light" recordCount="2.0">
+            <SimplePredicate field="Attack_Points" operator="greaterThan" value="2450.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="2.0"/>
+            <ScoreDistribution value="Earth" recordCount="0.0"/>
+            <ScoreDistribution value="Dark" recordCount="0.0"/>
+            <ScoreDistribution value="Wind" recordCount="0.0"/>
+          </Node>
+        </Node>
+      </Node>
+      <Node id="28" score="Earth" recordCount="16.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Insect"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="13.0"/>
+        <ScoreDistribution value="Dark" recordCount="0.0"/>
+        <ScoreDistribution value="Wind" recordCount="3.0"/>
+        <Node id="29" score="Earth" recordCount="11.0">
+          <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1450.0"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="0.0"/>
+          <ScoreDistribution value="Earth" recordCount="8.0"/>
+          <ScoreDistribution value="Dark" recordCount="0.0"/>
+          <ScoreDistribution value="Wind" recordCount="3.0"/>
+          <Node id="30" score="Earth" recordCount="4.0">
+            <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="1075.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="0.0"/>
+            <ScoreDistribution value="Earth" recordCount="4.0"/>
+            <ScoreDistribution value="Dark" recordCount="0.0"/>
+            <ScoreDistribution value="Wind" recordCount="0.0"/>
+          </Node>
+          <Node id="31" score="Earth" recordCount="7.0">
+            <SimplePredicate field="Attack_Points" operator="greaterThan" value="1075.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="0.0"/>
+            <ScoreDistribution value="Earth" recordCount="4.0"/>
+            <ScoreDistribution value="Dark" recordCount="0.0"/>
+            <ScoreDistribution value="Wind" recordCount="3.0"/>
+            <Node id="32" score="Wind" recordCount="3.0">
+              <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1100.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="1.0"/>
+              <ScoreDistribution value="Dark" recordCount="0.0"/>
+              <ScoreDistribution value="Wind" recordCount="2.0"/>
+            </Node>
+            <Node id="33" score="Earth" recordCount="4.0">
+              <SimplePredicate field="Defense_Points" operator="greaterThan" value="1100.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="3.0"/>
+              <ScoreDistribution value="Dark" recordCount="0.0"/>
+              <ScoreDistribution value="Wind" recordCount="1.0"/>
+            </Node>
+          </Node>
+        </Node>
+        <Node id="36" score="Earth" recordCount="5.0">
+          <SimplePredicate field="Defense_Points" operator="greaterThan" value="1450.0"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="0.0"/>
+          <ScoreDistribution value="Earth" recordCount="5.0"/>
+          <ScoreDistribution value="Dark" recordCount="0.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+        </Node>
+      </Node>
+      <Node id="37" score="Dark" recordCount="30.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Machine"/>
+        <ScoreDistribution value="Water" recordCount="1.0"/>
+        <ScoreDistribution value="Fire" recordCount="4.0"/>
+        <ScoreDistribution value="Light" recordCount="2.0"/>
+        <ScoreDistribution value="Earth" recordCount="10.0"/>
+        <ScoreDistribution value="Dark" recordCount="11.0"/>
+        <ScoreDistribution value="Wind" recordCount="2.0"/>
+        <Node id="38" score="Earth" recordCount="3.0">
+          <SimplePredicate field="Level" operator="lessOrEqual" value="3.5"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="0.0"/>
+          <ScoreDistribution value="Earth" recordCount="3.0"/>
+          <ScoreDistribution value="Dark" recordCount="0.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+        </Node>
+        <Node id="39" score="Dark" recordCount="27.0">
+          <SimplePredicate field="Level" operator="greaterThan" value="3.5"/>
+          <ScoreDistribution value="Water" recordCount="1.0"/>
+          <ScoreDistribution value="Fire" recordCount="4.0"/>
+          <ScoreDistribution value="Light" recordCount="2.0"/>
+          <ScoreDistribution value="Earth" recordCount="7.0"/>
+          <ScoreDistribution value="Dark" recordCount="11.0"/>
+          <ScoreDistribution value="Wind" recordCount="2.0"/>
+          <Node id="40" score="Earth" recordCount="13.0">
+            <SimplePredicate field="Level" operator="lessOrEqual" value="4.5"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="3.0"/>
+            <ScoreDistribution value="Light" recordCount="2.0"/>
+            <ScoreDistribution value="Earth" recordCount="4.0"/>
+            <ScoreDistribution value="Dark" recordCount="3.0"/>
+            <ScoreDistribution value="Wind" recordCount="1.0"/>
+            <Node id="41" score="Earth" recordCount="6.0">
+              <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1300.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="1.0"/>
+              <ScoreDistribution value="Earth" recordCount="2.0"/>
+              <ScoreDistribution value="Dark" recordCount="2.0"/>
+              <ScoreDistribution value="Wind" recordCount="1.0"/>
+              <Node id="42" score="Light" recordCount="2.0">
+                <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="1275.0"/>
+                <ScoreDistribution value="Water" recordCount="0.0"/>
+                <ScoreDistribution value="Fire" recordCount="0.0"/>
+                <ScoreDistribution value="Light" recordCount="1.0"/>
+                <ScoreDistribution value="Earth" recordCount="1.0"/>
+                <ScoreDistribution value="Dark" recordCount="0.0"/>
+                <ScoreDistribution value="Wind" recordCount="0.0"/>
+              </Node>
+              <Node id="43" score="Dark" recordCount="4.0">
+                <SimplePredicate field="Attack_Points" operator="greaterThan" value="1275.0"/>
+                <ScoreDistribution value="Water" recordCount="0.0"/>
+                <ScoreDistribution value="Fire" recordCount="0.0"/>
+                <ScoreDistribution value="Light" recordCount="0.0"/>
+                <ScoreDistribution value="Earth" recordCount="1.0"/>
+                <ScoreDistribution value="Dark" recordCount="2.0"/>
+                <ScoreDistribution value="Wind" recordCount="1.0"/>
+              </Node>
+            </Node>
+            <Node id="46" score="Fire" recordCount="7.0">
+              <SimplePredicate field="Defense_Points" operator="greaterThan" value="1300.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="3.0"/>
+              <ScoreDistribution value="Light" recordCount="1.0"/>
+              <ScoreDistribution value="Earth" recordCount="2.0"/>
+              <ScoreDistribution value="Dark" recordCount="1.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+              <Node id="47" score="Fire" recordCount="3.0">
+                <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="1300.0"/>
+                <ScoreDistribution value="Water" recordCount="0.0"/>
+                <ScoreDistribution value="Fire" recordCount="2.0"/>
+                <ScoreDistribution value="Light" recordCount="0.0"/>
+                <ScoreDistribution value="Earth" recordCount="0.0"/>
+                <ScoreDistribution value="Dark" recordCount="1.0"/>
+                <ScoreDistribution value="Wind" recordCount="0.0"/>
+              </Node>
+              <Node id="48" score="Earth" recordCount="4.0">
+                <SimplePredicate field="Attack_Points" operator="greaterThan" value="1300.0"/>
+                <ScoreDistribution value="Water" recordCount="0.0"/>
+                <ScoreDistribution value="Fire" recordCount="1.0"/>
+                <ScoreDistribution value="Light" recordCount="1.0"/>
+                <ScoreDistribution value="Earth" recordCount="2.0"/>
+                <ScoreDistribution value="Dark" recordCount="0.0"/>
+                <ScoreDistribution value="Wind" recordCount="0.0"/>
+              </Node>
+            </Node>
+          </Node>
+          <Node id="51" score="Dark" recordCount="14.0">
+            <SimplePredicate field="Level" operator="greaterThan" value="4.5"/>
+            <ScoreDistribution value="Water" recordCount="1.0"/>
+            <ScoreDistribution value="Fire" recordCount="1.0"/>
+            <ScoreDistribution value="Light" recordCount="0.0"/>
+            <ScoreDistribution value="Earth" recordCount="3.0"/>
+            <ScoreDistribution value="Dark" recordCount="8.0"/>
+            <ScoreDistribution value="Wind" recordCount="1.0"/>
+            <Node id="52" score="Dark" recordCount="6.0">
+              <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1750.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="0.0"/>
+              <ScoreDistribution value="Dark" recordCount="5.0"/>
+              <ScoreDistribution value="Wind" recordCount="1.0"/>
+            </Node>
+            <Node id="55" score="Earth" recordCount="8.0">
+              <SimplePredicate field="Defense_Points" operator="greaterThan" value="1750.0"/>
+              <ScoreDistribution value="Water" recordCount="1.0"/>
+              <ScoreDistribution value="Fire" recordCount="1.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="3.0"/>
+              <ScoreDistribution value="Dark" recordCount="3.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+              <Node id="56" score="Earth" recordCount="4.0">
+                <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1950.0"/>
+                <ScoreDistribution value="Water" recordCount="1.0"/>
+                <ScoreDistribution value="Fire" recordCount="0.0"/>
+                <ScoreDistribution value="Light" recordCount="0.0"/>
+                <ScoreDistribution value="Earth" recordCount="2.0"/>
+                <ScoreDistribution value="Dark" recordCount="1.0"/>
+                <ScoreDistribution value="Wind" recordCount="0.0"/>
+              </Node>
+              <Node id="59" score="Dark" recordCount="4.0">
+                <SimplePredicate field="Defense_Points" operator="greaterThan" value="1950.0"/>
+                <ScoreDistribution value="Water" recordCount="0.0"/>
+                <ScoreDistribution value="Fire" recordCount="1.0"/>
+                <ScoreDistribution value="Light" recordCount="0.0"/>
+                <ScoreDistribution value="Earth" recordCount="1.0"/>
+                <ScoreDistribution value="Dark" recordCount="2.0"/>
+                <ScoreDistribution value="Wind" recordCount="0.0"/>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node id="62" score="Earth" recordCount="16.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Rock"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="1.0"/>
+        <ScoreDistribution value="Earth" recordCount="14.0"/>
+        <ScoreDistribution value="Dark" recordCount="1.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+      </Node>
+      <Node id="67" score="Dark" recordCount="28.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Fiend"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="1.0"/>
+        <ScoreDistribution value="Light" recordCount="1.0"/>
+        <ScoreDistribution value="Earth" recordCount="1.0"/>
+        <ScoreDistribution value="Dark" recordCount="25.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+      </Node>
+      <Node id="80" score="Dark" recordCount="20.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Spellcaster"/>
+        <ScoreDistribution value="Water" recordCount="3.0"/>
+        <ScoreDistribution value="Fire" recordCount="1.0"/>
+        <ScoreDistribution value="Light" recordCount="5.0"/>
+        <ScoreDistribution value="Earth" recordCount="0.0"/>
+        <ScoreDistribution value="Dark" recordCount="11.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+        <Node id="81" score="Dark" recordCount="9.0">
+          <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="950.0"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="1.0"/>
+          <ScoreDistribution value="Earth" recordCount="0.0"/>
+          <ScoreDistribution value="Dark" recordCount="8.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+        </Node>
+        <Node id="84" score="Light" recordCount="11.0">
+          <SimplePredicate field="Defense_Points" operator="greaterThan" value="950.0"/>
+          <ScoreDistribution value="Water" recordCount="3.0"/>
+          <ScoreDistribution value="Fire" recordCount="1.0"/>
+          <ScoreDistribution value="Light" recordCount="4.0"/>
+          <ScoreDistribution value="Earth" recordCount="0.0"/>
+          <ScoreDistribution value="Dark" recordCount="3.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+          <Node id="85" score="Water" recordCount="6.0">
+            <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="1300.0"/>
+            <ScoreDistribution value="Water" recordCount="3.0"/>
+            <ScoreDistribution value="Fire" recordCount="1.0"/>
+            <ScoreDistribution value="Light" recordCount="1.0"/>
+            <ScoreDistribution value="Earth" recordCount="0.0"/>
+            <ScoreDistribution value="Dark" recordCount="1.0"/>
+            <ScoreDistribution value="Wind" recordCount="0.0"/>
+            <Node id="86" score="Fire" recordCount="2.0">
+              <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1750.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="1.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="0.0"/>
+              <ScoreDistribution value="Dark" recordCount="1.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+            </Node>
+            <Node id="87" score="Water" recordCount="4.0">
+              <SimplePredicate field="Defense_Points" operator="greaterThan" value="1750.0"/>
+              <ScoreDistribution value="Water" recordCount="3.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="1.0"/>
+              <ScoreDistribution value="Earth" recordCount="0.0"/>
+              <ScoreDistribution value="Dark" recordCount="0.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+            </Node>
+          </Node>
+          <Node id="90" score="Light" recordCount="5.0">
+            <SimplePredicate field="Attack_Points" operator="greaterThan" value="1300.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="3.0"/>
+            <ScoreDistribution value="Earth" recordCount="0.0"/>
+            <ScoreDistribution value="Dark" recordCount="2.0"/>
+            <ScoreDistribution value="Wind" recordCount="0.0"/>
+            <Node id="91" score="Light" recordCount="2.0">
+              <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1100.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="2.0"/>
+              <ScoreDistribution value="Earth" recordCount="0.0"/>
+              <ScoreDistribution value="Dark" recordCount="0.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+            </Node>
+            <Node id="92" score="Dark" recordCount="3.0">
+              <SimplePredicate field="Defense_Points" operator="greaterThan" value="1100.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="1.0"/>
+              <ScoreDistribution value="Earth" recordCount="0.0"/>
+              <ScoreDistribution value="Dark" recordCount="2.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node id="93" score="Earth" recordCount="32.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Beast"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="1.0"/>
+        <ScoreDistribution value="Light" recordCount="3.0"/>
+        <ScoreDistribution value="Earth" recordCount="25.0"/>
+        <ScoreDistribution value="Dark" recordCount="2.0"/>
+        <ScoreDistribution value="Wind" recordCount="1.0"/>
+        <Node id="94" score="Light" recordCount="4.0">
+          <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="75.0"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="3.0"/>
+          <ScoreDistribution value="Earth" recordCount="1.0"/>
+          <ScoreDistribution value="Dark" recordCount="0.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+        </Node>
+        <Node id="95" score="Earth" recordCount="28.0">
+          <SimplePredicate field="Attack_Points" operator="greaterThan" value="75.0"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="1.0"/>
+          <ScoreDistribution value="Light" recordCount="0.0"/>
+          <ScoreDistribution value="Earth" recordCount="24.0"/>
+          <ScoreDistribution value="Dark" recordCount="2.0"/>
+          <ScoreDistribution value="Wind" recordCount="1.0"/>
+          <Node id="96" score="Earth" recordCount="21.0">
+            <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="1775.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="0.0"/>
+            <ScoreDistribution value="Earth" recordCount="20.0"/>
+            <ScoreDistribution value="Dark" recordCount="1.0"/>
+            <ScoreDistribution value="Wind" recordCount="0.0"/>
+          </Node>
+          <Node id="101" score="Earth" recordCount="7.0">
+            <SimplePredicate field="Attack_Points" operator="greaterThan" value="1775.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="1.0"/>
+            <ScoreDistribution value="Light" recordCount="0.0"/>
+            <ScoreDistribution value="Earth" recordCount="4.0"/>
+            <ScoreDistribution value="Dark" recordCount="1.0"/>
+            <ScoreDistribution value="Wind" recordCount="1.0"/>
+            <Node id="102" score="Dark" recordCount="2.0">
+              <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1450.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="0.0"/>
+              <ScoreDistribution value="Dark" recordCount="1.0"/>
+              <ScoreDistribution value="Wind" recordCount="1.0"/>
+            </Node>
+            <Node id="103" score="Earth" recordCount="5.0">
+              <SimplePredicate field="Defense_Points" operator="greaterThan" value="1450.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="1.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="4.0"/>
+              <ScoreDistribution value="Dark" recordCount="0.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+            </Node>
+          </Node>
+        </Node>
+      </Node>
+      <Node id="106" score="Earth" recordCount="38.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Warrior"/>
+        <ScoreDistribution value="Water" recordCount="1.0"/>
+        <ScoreDistribution value="Fire" recordCount="1.0"/>
+        <ScoreDistribution value="Light" recordCount="3.0"/>
+        <ScoreDistribution value="Earth" recordCount="27.0"/>
+        <ScoreDistribution value="Dark" recordCount="5.0"/>
+        <ScoreDistribution value="Wind" recordCount="1.0"/>
+        <Node id="107" score="Earth" recordCount="30.0">
+          <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1550.0"/>
+          <ScoreDistribution value="Water" recordCount="1.0"/>
+          <ScoreDistribution value="Fire" recordCount="1.0"/>
+          <ScoreDistribution value="Light" recordCount="0.0"/>
+          <ScoreDistribution value="Earth" recordCount="23.0"/>
+          <ScoreDistribution value="Dark" recordCount="4.0"/>
+          <ScoreDistribution value="Wind" recordCount="1.0"/>
+          <Node id="108" score="Earth" recordCount="8.0">
+            <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="850.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="1.0"/>
+            <ScoreDistribution value="Light" recordCount="0.0"/>
+            <ScoreDistribution value="Earth" recordCount="4.0"/>
+            <ScoreDistribution value="Dark" recordCount="3.0"/>
+            <ScoreDistribution value="Wind" recordCount="0.0"/>
+            <Node id="109" score="Dark" recordCount="5.0">
+              <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="1225.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="1.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="1.0"/>
+              <ScoreDistribution value="Dark" recordCount="3.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+            </Node>
+            <Node id="112" score="Earth" recordCount="3.0">
+              <SimplePredicate field="Attack_Points" operator="greaterThan" value="1225.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="3.0"/>
+              <ScoreDistribution value="Dark" recordCount="0.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+            </Node>
+          </Node>
+          <Node id="113" score="Earth" recordCount="22.0">
+            <SimplePredicate field="Defense_Points" operator="greaterThan" value="850.0"/>
+            <ScoreDistribution value="Water" recordCount="1.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="0.0"/>
+            <ScoreDistribution value="Earth" recordCount="19.0"/>
+            <ScoreDistribution value="Dark" recordCount="1.0"/>
+            <ScoreDistribution value="Wind" recordCount="1.0"/>
+            <Node id="114" score="Earth" recordCount="18.0">
+              <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="1550.0"/>
+              <ScoreDistribution value="Water" recordCount="0.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="17.0"/>
+              <ScoreDistribution value="Dark" recordCount="0.0"/>
+              <ScoreDistribution value="Wind" recordCount="1.0"/>
+            </Node>
+            <Node id="121" score="Earth" recordCount="4.0">
+              <SimplePredicate field="Attack_Points" operator="greaterThan" value="1550.0"/>
+              <ScoreDistribution value="Water" recordCount="1.0"/>
+              <ScoreDistribution value="Fire" recordCount="0.0"/>
+              <ScoreDistribution value="Light" recordCount="0.0"/>
+              <ScoreDistribution value="Earth" recordCount="2.0"/>
+              <ScoreDistribution value="Dark" recordCount="1.0"/>
+              <ScoreDistribution value="Wind" recordCount="0.0"/>
+              <Node id="122" score="Water" recordCount="2.0">
+                <SimplePredicate field="Level" operator="lessOrEqual" value="4.5"/>
+                <ScoreDistribution value="Water" recordCount="1.0"/>
+                <ScoreDistribution value="Fire" recordCount="0.0"/>
+                <ScoreDistribution value="Light" recordCount="0.0"/>
+                <ScoreDistribution value="Earth" recordCount="0.0"/>
+                <ScoreDistribution value="Dark" recordCount="1.0"/>
+                <ScoreDistribution value="Wind" recordCount="0.0"/>
+              </Node>
+              <Node id="123" score="Earth" recordCount="2.0">
+                <SimplePredicate field="Level" operator="greaterThan" value="4.5"/>
+                <ScoreDistribution value="Water" recordCount="0.0"/>
+                <ScoreDistribution value="Fire" recordCount="0.0"/>
+                <ScoreDistribution value="Light" recordCount="0.0"/>
+                <ScoreDistribution value="Earth" recordCount="2.0"/>
+                <ScoreDistribution value="Dark" recordCount="0.0"/>
+                <ScoreDistribution value="Wind" recordCount="0.0"/>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+        <Node id="124" score="Earth" recordCount="8.0">
+          <SimplePredicate field="Defense_Points" operator="greaterThan" value="1550.0"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="3.0"/>
+          <ScoreDistribution value="Earth" recordCount="4.0"/>
+          <ScoreDistribution value="Dark" recordCount="1.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+          <Node id="125" score="Light" recordCount="6.0">
+            <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="2050.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="3.0"/>
+            <ScoreDistribution value="Earth" recordCount="2.0"/>
+            <ScoreDistribution value="Dark" recordCount="1.0"/>
+            <ScoreDistribution value="Wind" recordCount="0.0"/>
+          </Node>
+          <Node id="130" score="Earth" recordCount="2.0">
+            <SimplePredicate field="Defense_Points" operator="greaterThan" value="2050.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="0.0"/>
+            <ScoreDistribution value="Earth" recordCount="2.0"/>
+            <ScoreDistribution value="Dark" recordCount="0.0"/>
+            <ScoreDistribution value="Wind" recordCount="0.0"/>
+          </Node>
+        </Node>
+      </Node>
+      <Node id="131" score="Earth" recordCount="9.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Dinosaur"/>
+        <ScoreDistribution value="Water" recordCount="2.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="7.0"/>
+        <ScoreDistribution value="Dark" recordCount="0.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+        <Node id="132" score="Earth" recordCount="5.0">
+          <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1350.0"/>
+          <ScoreDistribution value="Water" recordCount="0.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="0.0"/>
+          <ScoreDistribution value="Earth" recordCount="5.0"/>
+          <ScoreDistribution value="Dark" recordCount="0.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+        </Node>
+        <Node id="133" score="Water" recordCount="4.0">
+          <SimplePredicate field="Defense_Points" operator="greaterThan" value="1350.0"/>
+          <ScoreDistribution value="Water" recordCount="2.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="0.0"/>
+          <ScoreDistribution value="Earth" recordCount="2.0"/>
+          <ScoreDistribution value="Dark" recordCount="0.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+          <Node id="134" score="Water" recordCount="2.0">
+            <SimplePredicate field="Defense_Points" operator="lessOrEqual" value="1850.0"/>
+            <ScoreDistribution value="Water" recordCount="2.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="0.0"/>
+            <ScoreDistribution value="Earth" recordCount="0.0"/>
+            <ScoreDistribution value="Dark" recordCount="0.0"/>
+            <ScoreDistribution value="Wind" recordCount="0.0"/>
+          </Node>
+          <Node id="135" score="Earth" recordCount="2.0">
+            <SimplePredicate field="Defense_Points" operator="greaterThan" value="1850.0"/>
+            <ScoreDistribution value="Water" recordCount="0.0"/>
+            <ScoreDistribution value="Fire" recordCount="0.0"/>
+            <ScoreDistribution value="Light" recordCount="0.0"/>
+            <ScoreDistribution value="Earth" recordCount="2.0"/>
+            <ScoreDistribution value="Dark" recordCount="0.0"/>
+            <ScoreDistribution value="Wind" recordCount="0.0"/>
+          </Node>
+        </Node>
+      </Node>
+      <Node id="136" score="Water" recordCount="5.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Reptile"/>
+        <ScoreDistribution value="Water" recordCount="3.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="2.0"/>
+        <ScoreDistribution value="Dark" recordCount="0.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+        <Node id="137" score="Earth" recordCount="3.0">
+          <SimplePredicate field="Attack_Points" operator="lessOrEqual" value="1675.0"/>
+          <ScoreDistribution value="Water" recordCount="1.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="0.0"/>
+          <ScoreDistribution value="Earth" recordCount="2.0"/>
+          <ScoreDistribution value="Dark" recordCount="0.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+        </Node>
+        <Node id="138" score="Water" recordCount="2.0">
+          <SimplePredicate field="Attack_Points" operator="greaterThan" value="1675.0"/>
+          <ScoreDistribution value="Water" recordCount="2.0"/>
+          <ScoreDistribution value="Fire" recordCount="0.0"/>
+          <ScoreDistribution value="Light" recordCount="0.0"/>
+          <ScoreDistribution value="Earth" recordCount="0.0"/>
+          <ScoreDistribution value="Dark" recordCount="0.0"/>
+          <ScoreDistribution value="Wind" recordCount="0.0"/>
+        </Node>
+      </Node>
+      <Node id="139" score="Water" recordCount="19.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Aqua"/>
+        <ScoreDistribution value="Water" recordCount="17.0"/>
+        <ScoreDistribution value="Fire" recordCount="1.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="1.0"/>
+        <ScoreDistribution value="Dark" recordCount="0.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+      </Node>
+      <Node id="144" score="Earth" recordCount="7.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Plant"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="7.0"/>
+        <ScoreDistribution value="Dark" recordCount="0.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+      </Node>
+      <Node id="145" score="Earth" recordCount="5.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Cyberse"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="4.0"/>
+        <ScoreDistribution value="Dark" recordCount="1.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+      </Node>
+      <Node id="148" score="Fire" recordCount="12.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Pyro"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="10.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="2.0"/>
+        <ScoreDistribution value="Dark" recordCount="0.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+      </Node>
+      <Node id="153" score="Dark" recordCount="9.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Zombie"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="1.0"/>
+        <ScoreDistribution value="Dark" recordCount="8.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+      </Node>
+      <Node id="156" score="Wind" recordCount="9.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Winged"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="1.0"/>
+        <ScoreDistribution value="Dark" recordCount="0.0"/>
+        <ScoreDistribution value="Wind" recordCount="8.0"/>
+      </Node>
+      <Node id="159" score="Water" recordCount="4.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Thunder"/>
+        <ScoreDistribution value="Water" recordCount="2.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="1.0"/>
+        <ScoreDistribution value="Dark" recordCount="0.0"/>
+        <ScoreDistribution value="Wind" recordCount="1.0"/>
+      </Node>
+      <Node id="162" score="Light" recordCount="3.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Psychic"/>
+        <ScoreDistribution value="Water" recordCount="0.0"/>
+        <ScoreDistribution value="Fire" recordCount="1.0"/>
+        <ScoreDistribution value="Light" recordCount="2.0"/>
+        <ScoreDistribution value="Earth" recordCount="0.0"/>
+        <ScoreDistribution value="Dark" recordCount="0.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+      </Node>
+      <Node id="163" score="Water" recordCount="4.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Sea"/>
+        <ScoreDistribution value="Water" recordCount="4.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="0.0"/>
+        <ScoreDistribution value="Earth" recordCount="0.0"/>
+        <ScoreDistribution value="Dark" recordCount="0.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+      </Node>
+      <Node id="164" score="Water" recordCount="3.0">
+        <SimplePredicate field="Sub-Types" operator="equal" value="Wyrm"/>
+        <ScoreDistribution value="Water" recordCount="1.0"/>
+        <ScoreDistribution value="Fire" recordCount="0.0"/>
+        <ScoreDistribution value="Light" recordCount="1.0"/>
+        <ScoreDistribution value="Earth" recordCount="0.0"/>
+        <ScoreDistribution value="Dark" recordCount="1.0"/>
+        <ScoreDistribution value="Wind" recordCount="0.0"/>
+      </Node>
+    </Node>
+  </TreeModel>
+</PMML>
