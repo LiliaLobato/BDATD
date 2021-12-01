@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="kMeans">
+    <entry key="dimensions" type="xint" value="4"/>
+    <entry key="ignoredColumns" type="xint" value="1"/>
+    <config key="clusterCoverage">
+        <entry key="array-size" type="xint" value="4"/>
+        <entry key="0" type="xint" value="2332"/>
+        <entry key="1" type="xint" value="549"/>
+        <entry key="2" type="xint" value="29"/>
+        <entry key="3" type="xint" value="294"/>
+    </config>
+    <config key="kMeansCluster0">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xdouble" value="0.008978456959228465"/>
+        <entry key="1" type="xdouble" value="9.0"/>
+        <entry key="2" type="xdouble" value="0.0"/>
+    </config>
+    <config key="kMeansCluster1">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xdouble" value="0.012232240526674138"/>
+        <entry key="1" type="xdouble" value="13.0"/>
+        <entry key="2" type="xdouble" value="1.0"/>
+    </config>
+    <config key="kMeansCluster2">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xdouble" value="0.16466822375292334"/>
+        <entry key="1" type="xdouble" value="9.0"/>
+        <entry key="2" type="xdouble" value="0.0"/>
+    </config>
+    <config key="kMeansCluster3">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xdouble" value="0.0069736094780969956"/>
+        <entry key="1" type="xdouble" value="11.772108843537415"/>
+        <entry key="2" type="xdouble" value="2.227891156462585"/>
+    </config>
+    <config key="FeatureNames">
+        <entry key="array-size" type="xint" value="4"/>
+        <entry key="0" type="xstring" value="total"/>
+        <entry key="1" type="xstring" value="id_comprador"/>
+        <entry key="2" type="xstring" value="nombre (to number)"/>
+        <entry key="3" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

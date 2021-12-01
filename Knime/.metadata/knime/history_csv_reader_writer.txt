@@ -1,10 +1,10 @@
+C:\Users\1234\Documents\Repositorios\BDTD_project\datasets/proveedor.csv
+C:\Users\1234\Documents\Repositorios\BDTD_project\datasets/comprador.csv
+C:\Users\1234\Documents\Repositorios\BDTD_project\datasets/compra_d_Rango.csv
+C:\Users\1234\Documents\Repositorios\BDTD_project\datasets/articulo.csv
+C:\Users\1234\Documents\Repositorios\BDTD_project\datasets/compra_d.csv
 C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInformation_agrupadas.csv
 file:/C:/Users/1234/Documents/Repositorios/BDATD/E2_706937/CustomerInformation.csv
 file:/C:/Users/1234/Documents/Repositorios/BDATD/P5/Yu-Gi-Oh_big/Yu-Gi-Oh-cardData_big.csv
 file:/C:/Users/1234/Documents/Repositorios/BDATD/P5/Yu-Gi-Oh_big/Yu-Gi-Oh-cardData_big_original.csv
 file:/C:/Users/1234/Documents/Repositorios/BDATD/P5/Yu-Gi-Oh_big/Yu-Gi-Oh-cardData_complete.csv
-C:\Users\1234\Documents\Repositorios\BDATD\P5\Yu-Gi-Oh_big/Yu-Gi-Oh-cardData_complete_agrupadas.csv
-C:\Users\1234\Documents\Repositorios\BDATD\P5\Yu-Gi-Oh_small/Yu-Gi-Oh-Normal_Monsters_agrupadas.csv
-file:/C:/Users/1234/Documents/Repositorios/BDATD/P5/Yu-Gi-Oh_small/Yu-Gi-Oh-Normal_Monster_complete.csv
-C:\Users\1234\Documents\Repositorios\BDATD/P5\Yu-Gi-Oh_small/Yu-Gi-Oh-Normal_Monsters_NEW.csv
-file:/C:/Users/1234/Documents/Repositorios/BDATD/P5/Yu-Gi-Oh_small/Yu-Gi-Oh-Normal_Monsters_subSample.csv

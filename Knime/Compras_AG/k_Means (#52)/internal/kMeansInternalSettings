@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="kMeans">
+    <entry key="dimensions" type="xint" value="13"/>
+    <entry key="ignoredColumns" type="xint" value="7"/>
+    <config key="clusterCoverage">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xint" value="672"/>
+        <entry key="1" type="xint" value="1741"/>
+        <entry key="2" type="xint" value="791"/>
+    </config>
+    <config key="kMeansCluster0">
+        <entry key="array-size" type="xint" value="6"/>
+        <entry key="0" type="xdouble" value="0.00863583942576743"/>
+        <entry key="1" type="xdouble" value="1.369047619047619"/>
+        <entry key="2" type="xdouble" value="10.168154761904763"/>
+        <entry key="3" type="xdouble" value="1.2678571428571428"/>
+        <entry key="4" type="xdouble" value="0.02976190476190476"/>
+        <entry key="5" type="xdouble" value="2.1607142857142856"/>
+    </config>
+    <config key="kMeansCluster1">
+        <entry key="array-size" type="xint" value="6"/>
+        <entry key="0" type="xdouble" value="0.01469880707379793"/>
+        <entry key="1" type="xdouble" value="0.8799540493968984"/>
+        <entry key="2" type="xdouble" value="10.959793222286043"/>
+        <entry key="3" type="xdouble" value="0.5743825387708213"/>
+        <entry key="4" type="xdouble" value="3.0786904078116026"/>
+        <entry key="5" type="xdouble" value="17.982768523836874"/>
+    </config>
+    <config key="kMeansCluster2">
+        <entry key="array-size" type="xint" value="6"/>
+        <entry key="0" type="xdouble" value="0.003900093734339087"/>
+        <entry key="1" type="xdouble" value="1.4993678887484196"/>
+        <entry key="2" type="xdouble" value="11.61567635903919"/>
+        <entry key="3" type="xdouble" value="9.34260429835651"/>
+        <entry key="4" type="xdouble" value="8.155499367888748"/>
+        <entry key="5" type="xdouble" value="34.94184576485461"/>
+    </config>
+    <config key="FeatureNames">
+        <entry key="array-size" type="xint" value="13"/>
+        <entry key="0" type="xstring" value="total"/>
+        <entry key="1" type="xstring" value="colorBase (to number)"/>
+        <entry key="2" type="xstring" value="colorDerivado (to number)"/>
+        <entry key="3" type="xstring" value="umd (to number)"/>
+        <entry key="4" type="xstring" value="tipo (to number)"/>
+        <entry key="5" type="xstring" value="grupo (to number)"/>
+        <entry key="6" type="xstring" isnull="true" value=""/>
+        <entry key="7" type="xstring" isnull="true" value=""/>
+        <entry key="8" type="xstring" isnull="true" value=""/>
+        <entry key="9" type="xstring" isnull="true" value=""/>
+        <entry key="10" type="xstring" isnull="true" value=""/>
+        <entry key="11" type="xstring" isnull="true" value=""/>
+        <entry key="12" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

@@ -1051,3 +1051,336 @@ Please configure in dialog.
 2021-11-29 09:58:39,702 : WARN  : main :  : Node : Hierarchical Clustering : 3:9 : Column 'Level' does not exist in input table
 2021-11-29 09:58:40,086 : WARN  : main :  : Node : Hierarchical Clustering : 3:9 : Column 'Level' does not exist in input table
 2021-11-29 10:05:44,859 : WARN  : KNIME-Worker-21-Hierarchical Clustering 3:9 :  : Node : Hierarchical Clustering : 3:9 : Execution canceled
+2021-11-30 02:15:18,405 : WARN  : main :  : Node : CSV Reader : 3:1 : Please specify a file
+2021-11-30 02:15:20,565 : WARN  : main :  : Node : CSV Reader : 3:2 : Please specify a file
+2021-11-30 02:59:01,028 : WARN  : ModalContext :  : Node : CSV Reader : 0:1 : Please specify a file
+2021-11-30 02:59:01,035 : WARN  : ModalContext :  : Node : CSV Reader : 0:2 : Please specify a file
+2021-11-30 02:59:52,631 : WARN  : main :  : Node : CSV Reader : 0:1 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:00:30,871 : WARN  : main :  : Node : CSV Reader : 0:2 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:00:31,716 : WARN  : main :  : Node : CSV Reader : 0:2 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:00:37,205 : WARN  : KNIME-Worker-9-CSV Reader 0:2 :  : Node : Joiner : 0:3 : No join columns passed.
+2021-11-30 03:03:26,821 : WARN  : main :  : Node : GroupBy : 0:4 : No grouping column included. Aggregate complete table.
+2021-11-30 03:03:26,821 : WARN  : main :  : Node : GroupBy : 0:4 : No aggregation column defined
+2021-11-30 03:03:26,822 : WARN  : main :  : Node : GroupBy : 0:4 : No aggregation column defined
+2021-11-30 03:03:26,902 : WARN  : main :  : Node : GroupBy : 0:4 : Please select at least one group or aggregation column
+2021-11-30 03:03:41,682 : WARN  : main :  : Node : GroupBy : 0:4 : No aggregation column defined
+2021-11-30 03:03:41,682 : WARN  : main :  : Node : GroupBy : 0:4 : No aggregation column defined
+2021-11-30 03:03:42,619 : WARN  : main :  : Node : GroupBy : 0:4 : No aggregation column defined
+2021-11-30 03:03:42,620 : WARN  : main :  : Node : GroupBy : 0:4 : No aggregation column defined
+2021-11-30 03:04:01,169 : WARN  : main :  : Node : GroupBy : 0:4 : No aggregation column defined
+2021-11-30 03:04:01,170 : WARN  : main :  : Node : GroupBy : 0:4 : No aggregation column defined
+2021-11-30 03:04:01,585 : WARN  : main :  : Node : GroupBy : 0:4 : No aggregation column defined
+2021-11-30 03:04:01,585 : WARN  : main :  : Node : GroupBy : 0:4 : No aggregation column defined
+2021-11-30 03:06:56,342 : WARN  : main :  : Node : Color Manager : 0:27 : Selected column "Cluster" with default nominal color mapping.
+2021-11-30 03:07:14,919 : WARN  : KNIME-Worker-22-Scatter Plot 0:28 :  : Node : Scatter Plot : 0:28 : Only the first 2500 rows are displayed.
+2021-11-30 03:08:06,084 : WARN  : KNIME-Worker-23-Scatter Plot 0:28 :  : Node : Scatter Plot : 0:28 : Only the first 2500 rows are displayed.
+2021-11-30 03:11:36,793 : WARN  : KNIME-Worker-29-Scatter Plot 0:28 :  : Node : Scatter Plot : 0:28 : Only the first 2500 rows are displayed.
+2021-11-30 03:16:30,731 : WARN  : KNIME-Worker-30-Interactive Pie chart (local) 0:30 :  : Node : Interactive Pie chart (local) : 0:30 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:16:30,745 : WARN  : KNIME-Worker-31-Scatter Matrix (local) 0:29 :  : Node : Scatter Matrix (local) : 0:29 : Only the first 2500 rows are displayed.
+2021-11-30 03:17:51,387 : WARN  : KNIME-Worker-32-Interactive Pie chart (local) 0:30 :  : Node : Interactive Pie chart (local) : 0:30 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:18:36,416 : WARN  : KNIME-Worker-34-Interactive Pie chart (local) 0:30 :  : Node : Interactive Pie chart (local) : 0:30 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:20:45,373 : WARN  : KNIME-Worker-35-Interactive Pie chart (local) 0:30 :  : Node : Interactive Pie chart (local) : 0:30 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:22:21,450 : WARN  : KNIME-Worker-36-Interactive Pie chart (local) 0:32 :  : Node : Interactive Pie chart (local) : 0:32 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:25:26,335 : WARN  : main :  : Node : CSV Reader : 0:34 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:25:26,337 : WARN  : main :  : Node : CSV Reader : 0:41 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:26:25,021 : WARN  : main :  : Node : CSV Reader : 0:34 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:26:52,734 : WARN  : main :  : Node : CSV Reader : 0:34 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:26:53,797 : WARN  : main :  : Node : CSV Reader : 0:34 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:27:05,383 : WARN  : main :  : Node : CSV Reader : 0:41 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:27:05,963 : WARN  : main :  : Node : CSV Reader : 0:41 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:27:25,179 : WARN  : KNIME-Worker-37-CSV Reader 0:34 :  : Node : Joiner : 0:38 : The join column names [id_proveedor] do not exist in the target table, which only specifies the column names [id_comprador, nombre]
+2021-11-30 03:28:49,447 : WARN  : KNIME-Worker-43-Number To Category (Apply) 0:42 :  : Node : Color Manager : 0:44 : Column "colonia" not found.
+2021-11-30 03:29:05,311 : WARN  : main :  : Node : Color Manager : 0:44 : Column "colonia" not found.
+2021-11-30 03:29:05,734 : WARN  : main :  : Node : Color Manager : 0:44 : Column "colonia" not found.
+2021-11-30 03:29:10,701 : WARN  : KNIME-Worker-44-Column Filter 0:45 :  : Node : Color Manager : 0:44 : Column "colonia" not found.
+2021-11-30 03:29:25,117 : WARN  : KNIME-Worker-39-Interactive Pie chart (local) 0:37 :  : Node : Interactive Pie chart (local) : 0:37 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:29:25,118 : WARN  : KNIME-Worker-40-Interactive Pie chart (local) 0:39 :  : Node : Interactive Pie chart (local) : 0:39 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:29:25,118 : WARN  : KNIME-Worker-41-Scatter Plot 0:46 :  : Node : Scatter Plot : 0:46 : Only the first 2500 rows are displayed.
+2021-11-30 03:29:25,255 : ERROR : KNIME-Worker-39-Interactive Pie chart (local) 0:37 :  : Node : Interactive Pie chart (local) : 0:37 : Execute failed: Selected pie column contains more than 360 unique values.
+org.knime.base.node.viz.pie.util.TooManySectionsException: Selected pie column contains more than 360 unique values.
+	at org.knime.base.node.viz.pie.datamodel.interactive.InteractivePieVizModel.addRows2Sections(InteractivePieVizModel.java:232)
+	at org.knime.base.node.viz.pie.datamodel.interactive.InteractivePieVizModel.createSectionsWithData(InteractivePieVizModel.java:191)
+	at org.knime.base.node.viz.pie.datamodel.interactive.InteractivePieVizModel.setPieColumn(InteractivePieVizModel.java:119)
+	at org.knime.base.node.viz.pie.datamodel.interactive.InteractivePieVizModel.<init>(InteractivePieVizModel.java:100)
+	at org.knime.base.node.viz.pie.node.interactive.InteractivePieNodeModel.getVizModelInternal(InteractivePieNodeModel.java:99)
+	at org.knime.base.node.viz.pie.node.interactive.InteractivePieNodeModel.getVizModelInternal(InteractivePieNodeModel.java:1)
+	at org.knime.base.node.viz.pie.node.PieNodeModel.execute(PieNodeModel.java:320)
+	at org.knime.base.node.viz.pie.node.PieNodeModel.execute(PieNodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:556)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2021-11-30 03:29:46,513 : WARN  : KNIME-Worker-42-Interactive Pie chart (local) 0:37 :  : Node : Interactive Pie chart (local) : 0:37 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:30:21,943 : WARN  : KNIME-Worker-46-Scatter Plot 0:46 :  : Node : Scatter Plot : 0:46 : Only the first 2500 rows are displayed.
+2021-11-30 03:31:27,158 : WARN  : KNIME-Worker-53-Interactive Pie chart (local) 0:39 :  : Node : Interactive Pie chart (local) : 0:39 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:31:27,168 : WARN  : KNIME-Worker-46-Scatter Plot 0:46 :  : Node : Scatter Plot : 0:46 : Only the first 2500 rows are displayed.
+2021-11-30 03:31:27,181 : WARN  : KNIME-Worker-47-Interactive Pie chart (local) 0:37 :  : Node : Interactive Pie chart (local) : 0:37 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:32:20,329 : WARN  : KNIME-Worker-47-Interactive Pie chart (local) 0:39 :  : Node : Interactive Pie chart (local) : 0:39 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:32:20,329 : WARN  : KNIME-Worker-46-Scatter Plot 0:46 :  : Node : Scatter Plot : 0:46 : Only the first 2500 rows are displayed.
+2021-11-30 03:32:20,338 : WARN  : KNIME-Worker-48-Interactive Pie chart (local) 0:37 :  : Node : Interactive Pie chart (local) : 0:37 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:33:07,216 : WARN  : KNIME-Worker-48-Interactive Pie chart (local) 0:37 :  : Node : Interactive Pie chart (local) : 0:37 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:33:07,216 : WARN  : KNIME-Worker-49-Scatter Plot 0:46 :  : Node : Scatter Plot : 0:46 : Only the first 2500 rows are displayed.
+2021-11-30 03:33:07,223 : WARN  : KNIME-Worker-46-Interactive Pie chart (local) 0:39 :  : Node : Interactive Pie chart (local) : 0:39 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:41:32,356 : WARN  : main :  : Node : CSV Reader : 0:53 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:42:29,843 : WARN  : main :  : Node : CSV Reader : 0:53 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:42:30,413 : WARN  : main :  : Node : CSV Reader : 0:53 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:42:33,878 : WARN  : KNIME-Worker-54-CSV Reader 0:53 :  : Node : Joiner : 0:51 : The join column names [id_comprador] do not exist in the target table, which only specifies the column names [id_articulo, descripcion, codigo, colorBase, colorDerivado, umd, tipo, grupo]
+2021-11-30 03:43:09,464 : ERROR : KNIME-Worker-56-Category To Number 0:58 :  : Node : Category To Number : 0:58 : Execute failed: Maximum number of categories reached for column: codigo (to number)
+java.lang.IllegalStateException: Maximum number of categories reached for column: codigo (to number)
+	at org.knime.base.node.preproc.colconvert.categorytonumber2.CategoryToNumberCellFactory.getCells(CategoryToNumberCellFactory.java:118)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:568)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:488)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:405)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:430)
+	at org.knime.base.node.preproc.colconvert.categorytonumber2.CategoryToNumberNodeModel.execute(CategoryToNumberNodeModel.java:161)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:556)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2021-11-30 03:43:55,979 : WARN  : KNIME-Worker-61-Number To Category (Apply) 0:49 :  : Node : Color Manager : 0:56 : Column "nombre" not found.
+2021-11-30 03:44:08,508 : WARN  : main :  : Node : Color Manager : 0:56 : Column "nombre" not found.
+2021-11-30 03:44:08,889 : WARN  : main :  : Node : Color Manager : 0:56 : Column "nombre" not found.
+2021-11-30 03:44:10,994 : WARN  : KNIME-Worker-62-Column Filter 0:48 :  : Node : Color Manager : 0:56 : Column "nombre" not found.
+2021-11-30 03:44:20,470 : WARN  : KNIME-Worker-56-Interactive Pie chart (local) 0:54 :  : Node : Interactive Pie chart (local) : 0:54 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:44:20,478 : WARN  : KNIME-Worker-57-Scatter Plot 0:50 :  : Node : Scatter Plot : 0:50 : Only the first 2500 rows are displayed.
+2021-11-30 03:44:36,472 : WARN  : KNIME-Worker-58-Scatter Plot 0:50 :  : Node : Scatter Plot : 0:50 : Only the first 2500 rows are displayed.
+2021-11-30 03:45:40,073 : WARN  : KNIME-Worker-63-Scatter Plot 0:50 :  : Node : Scatter Plot : 0:50 : Only the first 2500 rows are displayed.
+2021-11-30 03:46:26,189 : WARN  : KNIME-Worker-64-Scatter Plot 0:60 :  : Node : Scatter Plot : 0:60 : Only the first 2500 rows are displayed.
+2021-11-30 03:46:59,930 : WARN  : KNIME-Worker-65-Scatter Plot 0:50 :  : Node : Scatter Plot : 0:50 : Only the first 2500 rows are displayed.
+2021-11-30 03:48:28,117 : WARN  : KNIME-Worker-67-Scatter Plot 0:62 :  : Node : Scatter Plot : 0:62 : Only the first 2500 rows are displayed.
+2021-11-30 03:48:28,117 : WARN  : KNIME-Worker-66-Scatter Plot 0:60 :  : Node : Scatter Plot : 0:60 : Only the first 2500 rows are displayed.
+2021-11-30 03:48:28,120 : WARN  : KNIME-Worker-68-Scatter Plot 0:61 :  : Node : Scatter Plot : 0:61 : Only the first 2500 rows are displayed.
+2021-11-30 03:48:28,128 : WARN  : KNIME-Worker-69-Scatter Plot 0:63 :  : Node : Scatter Plot : 0:63 : Only the first 2500 rows are displayed.
+2021-11-30 03:49:52,916 : WARN  : KNIME-Worker-70-Scatter Plot 0:63 :  : Node : Scatter Plot : 0:63 : Only the first 2500 rows are displayed.
+2021-11-30 03:51:27,688 : WARN  : KNIME-Worker-72-Interactive Pie chart (local) 0:59 :  : Node : Interactive Pie chart (local) : 0:59 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 03:56:58,729 : WARN  : main :  : Node : Color Manager : 3:24 : Column "Attribute" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 03:57:13,121 : WARN  : main :  : Node : CSV Reader : 3:2 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 03:57:13,122 : WARN  : main :  : Node : CSV Reader : 3:1 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 18:49:48,714 : WARN  : main :  : Node : CSV Reader : 3:1 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 18:49:49,363 : WARN  : main :  : Node : CSV Reader : 3:1 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 18:50:09,371 : WARN  : KNIME-Worker-79-CSV Reader 3:2 :  : Node : Joiner : 3:3 : The join column names [id_proveedor] do not exist in the target table, which only specifies the column names [id_articulo, descripcion, codigo, colorBase, colorDerivado, umd, tipo, grupo]
+2021-11-30 18:57:00,755 : WARN  : main :  : Node : CSV Reader : 0:68 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 18:57:00,760 : WARN  : main :  : Node : CSV Reader : 0:72 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 18:57:36,472 : WARN  : KNIME-Worker-80-CSV Reader 0:68 :  : Node : Category To Number : 0:74 : No columns selected.
+2021-11-30 19:02:16,998 : WARN  : KNIME-Worker-86-Interactive Pie chart (local) 0:76 :  : Node : Interactive Pie chart (local) : 0:76 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 19:02:57,709 : WARN  : KNIME-Worker-87-Scatter Plot 0:78 :  : Node : Scatter Plot : 0:78 : Only the first 2500 rows are displayed.
+2021-11-30 19:06:35,780 : WARN  : main :  : Node : Math Formula : 3:28 : No configuration available
+2021-11-30 19:07:36,171 : WARN  : main :  : WrappedNodeDialog : Math Formula : 3:28 : failed to apply settings: Unable to parse m_expression
+No expression entered
+
+org.knime.core.node.InvalidSettingsException: Unable to parse m_expression
+No expression entered
+
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:179)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.JEPNodeDialogPane.saveSettingsTo(JEPNodeDialogPane.java:354)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2021-11-30 19:44:12,742 : WARN  : main :  : Node : CSV Reader : 3:34 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 19:44:12,744 : WARN  : main :  : Node : CSV Reader : 3:37 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 19:46:00,946 : WARN  : main :  : Node : CSV Writer : 3:42 : Please specify a file
+2021-11-30 19:46:48,932 : WARN  : main :  : Node : CSV Reader : 3:2 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 19:46:49,751 : WARN  : main :  : Node : CSV Reader : 3:2 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 19:46:51,940 : WARN  : KNIME-Worker-98-CSV Reader 3:2 :  : Node : Joiner : 3:3 : The join column names [id_proveedor] do not exist in the target table, which only specifies the column names [id_articulo, descripcion, codigo, colorBase, colorDerivado, umd, tipo, grupo]
+2021-11-30 19:46:51,941 : WARN  : KNIME-Worker-98-CSV Reader 3:2 :  : Node : Math Formula : 3:28 : No configuration available
+2021-11-30 19:47:22,645 : WARN  : main :  : Node : Color Manager : 3:31 : Column "colonia" not found.
+2021-11-30 19:47:36,369 : WARN  : KNIME-Worker-100-Interactive Pie chart (local) 3:32 :  : Node : Interactive Pie chart (local) : 3:32 : Only the first 2500 of 3204 rows are displayed.
+2021-11-30 19:50:18,471 : WARN  : main :  : Node : CSV Reader : 3:2 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 19:50:19,526 : WARN  : KNIME-Worker-101-CSV Reader 3:2 :  : Node : Joiner : 3:3 : The join column names [id_proveedor] do not exist in the target table, which only specifies the column names [id_articulo, descripcion, codigo, colorBase, colorDerivado, umd, tipo, grupo]
+2021-11-30 19:50:19,527 : WARN  : KNIME-Worker-101-CSV Reader 3:2 :  : Node : Math Formula : 3:28 : No configuration available
+2021-11-30 19:51:27,221 : WARN  : main :  : WrappedNodeDialog : Joiner : 3:3 : failed to apply settings: There are invalid  joining columns (highlighted with a red border).
+org.knime.core.node.InvalidSettingsException: There are invalid  joining columns (highlighted with a red border).
+	at org.knime.base.node.preproc.joiner3.Joiner3NodeDialog.columnPairsToJoinClauses(Joiner3NodeDialog.java:494)
+	at org.knime.base.node.preproc.joiner3.Joiner3NodeDialog.saveSettingsTo(Joiner3NodeDialog.java:475)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2021-11-30 19:51:57,179 : WARN  : main :  : WrappedNodeDialog : Joiner : 3:3 : failed to apply settings: There are invalid  joining columns (highlighted with a red border).
+org.knime.core.node.InvalidSettingsException: There are invalid  joining columns (highlighted with a red border).
+	at org.knime.base.node.preproc.joiner3.Joiner3NodeDialog.columnPairsToJoinClauses(Joiner3NodeDialog.java:494)
+	at org.knime.base.node.preproc.joiner3.Joiner3NodeDialog.saveSettingsTo(Joiner3NodeDialog.java:475)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2021-11-30 19:52:08,541 : WARN  : main :  : Node : Color Manager : 3:24 : Column "Attribute" not found.
+2021-11-30 19:52:11,122 : WARN  : main :  : Node : Color Manager : 3:24 : Column "Attribute" not found.
+2021-11-30 19:52:13,989 : WARN  : KNIME-Worker-102-Joiner 3:3 :  : Node : Color Manager : 3:24 : Column "Attribute" not found.
+2021-11-30 20:04:45,094 : WARN  : main :  : Node : CSV Reader : 3:2 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:04:46,163 : WARN  : KNIME-Worker-106-CSV Reader 3:2 :  : Node : Math Formula : 3:28 : No configuration available
+2021-11-30 20:04:46,164 : WARN  : KNIME-Worker-106-CSV Reader 3:2 :  : Node : Color Manager : 3:24 : Column "Attribute" not found.
+2021-11-30 20:10:10,471 : WARN  : main :  : Node : CSV Reader : 3:2 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:10:11,832 : WARN  : KNIME-Worker-107-CSV Reader 3:2 :  : Node : Color Manager : 3:24 : Column "Attribute" not found.
+2021-11-30 20:13:14,331 : WARN  : KNIME-Worker-108-Joiner 3:3 :  : Node : Color Manager : 3:24 : Column "Attribute" not found.
+2021-11-30 20:13:36,274 : WARN  : main :  : Node : Color Manager : 3:24 : Column "Attribute" not found.
+2021-11-30 20:13:37,607 : WARN  : main :  : Node : Color Manager : 3:24 : Column "Attribute" not found.
+2021-11-30 20:13:39,121 : WARN  : KNIME-Worker-109-Joiner 3:3 :  : Node : Color Manager : 3:24 : Column "Attribute" not found.
+2021-11-30 20:14:08,236 : WARN  : main :  : Node : Partitioning : 3:26 : Column 'Attribute' for stratified sampling does not exist
+2021-11-30 20:14:08,887 : WARN  : main :  : Node : Partitioning : 3:26 : Column 'Attribute' for stratified sampling does not exist
+2021-11-30 20:14:10,569 : WARN  : KNIME-Worker-110-Color Manager 3:24 :  : Node : Partitioning : 3:26 : Column 'Attribute' for stratified sampling does not exist
+2021-11-30 20:14:16,091 : WARN  : main :  : Node : Decision Tree Learner : 3:25 : Class column "Attribute" not found or incompatible
+2021-11-30 20:14:16,675 : WARN  : main :  : Node : Decision Tree Learner : 3:25 : Class column "Attribute" not found or incompatible
+2021-11-30 20:14:17,600 : WARN  : KNIME-Worker-111-Partitioning 3:26 :  : Node : Decision Tree Learner : 3:25 : Class column "Attribute" not found or incompatible
+2021-11-30 20:18:39,207 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:18:39,208 : WARN  : main :  : Node : Scorer : 3:21 : Column 'Attribute' not found.
+2021-11-30 20:18:39,851 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:18:39,851 : WARN  : main :  : Node : Scorer : 3:21 : Column 'Attribute' not found.
+2021-11-30 20:18:41,095 : WARN  : KNIME-Worker-112-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:18:42,607 : WARN  : KNIME-Worker-113-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:18:42,625 : WARN  : KNIME-Worker-113-Decision Tree Predictor 3:27 :  : Node : Scorer : 3:21 : Column 'Attribute' not found.
+2021-11-30 20:20:15,457 : WARN  : main :  : Node : CSV Reader : 3:28 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:20:15,462 : WARN  : main :  : Node : CSV Reader : 3:34 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:31:50,063 : WARN  : main :  : Node : CSV Reader : 3:2 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:31:52,166 : WARN  : KNIME-Worker-115-CSV Reader 3:2 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:32:13,356 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:32:14,267 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:32:18,368 : WARN  : KNIME-Worker-118-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:32:19,697 : WARN  : KNIME-Worker-119-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:32:20,989 : WARN  : KNIME-Worker-120-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:32:41,039 : WARN  : KNIME-Worker-115-CSV Reader 3:28 :  : DataTableSpec : Decision Tree Predictor : 3:31 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:37:45,629 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:37:46,144 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:39:28,550 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:39:50,058 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:39:50,464 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:39:55,563 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:39:56,269 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:39:57,315 : WARN  : KNIME-Worker-124-Number To String (PMML) 3:36 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:41:05,585 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:41:06,105 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:41:12,139 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:41:12,444 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:41:18,387 : WARN  : KNIME-Worker-126-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:41:22,664 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:41:22,665 : WARN  : main :  : Node : Scorer : 3:21 : Column 'Prediction (rango_compra)' not found.
+2021-11-30 20:41:22,982 : WARN  : main :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:41:22,983 : WARN  : main :  : Node : Scorer : 3:21 : Column 'Prediction (rango_compra)' not found.
+2021-11-30 20:41:24,773 : WARN  : KNIME-Worker-127-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:41:28,163 : WARN  : KNIME-Worker-128-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:41:28,196 : WARN  : KNIME-Worker-128-Decision Tree Predictor 3:27 :  : Node : Scorer : 3:21 : Column 'Prediction (rango_compra)' not found.
+2021-11-30 20:42:51,020 : WARN  : main :  : Node : CSV Reader : 3:37 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:42:51,022 : WARN  : main :  : Node : CSV Reader : 3:44 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:43:10,856 : WARN  : main :  : Node : Color Manager : 3:42 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:43:39,966 : WARN  : main :  : Node : Color Manager : 3:42 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:43:40,406 : WARN  : main :  : Node : Color Manager : 3:42 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:43:43,342 : WARN  : KNIME-Worker-131-Number To String (PMML) 3:39 :  : DataTableSpec : Decision Tree Predictor : 3:41 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:43:44,982 : WARN  : KNIME-Worker-133-Partitioning 3:43 :  : DataTableSpec : Decision Tree Predictor : 3:41 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:43:46,044 : WARN  : KNIME-Worker-134-Decision Tree Learner 3:45 :  : DataTableSpec : Decision Tree Predictor : 3:41 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:43:47,717 : WARN  : KNIME-Worker-135-Decision Tree Predictor 3:41 :  : DataTableSpec : Decision Tree Predictor : 3:41 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:46:05,513 : WARN  : main :  : Node : CSV Reader : 3:53 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:46:58,910 : WARN  : main :  : Node : CSV Reader : 3:53 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:46:59,463 : WARN  : main :  : Node : CSV Reader : 3:53 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:47:14,023 : WARN  : main :  : Node : Joiner : 3:49 : The join column names [id_articulo] do not exist in the target table, which only specifies the column names [colorBase, colorDerivado, umd, tipo, grupo, cantidad_articulos, id_comprador, rango_compra, precio, rango_precio]
+2021-11-30 20:47:39,441 : WARN  : main :  : Node : Color Manager : 3:47 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:47:40,911 : WARN  : main :  : Node : Color Manager : 3:47 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:47:48,733 : WARN  : KNIME-Worker-140-Number To String (PMML) 3:51 :  : DataTableSpec : Decision Tree Predictor : 3:52 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:47:50,869 : WARN  : KNIME-Worker-142-Partitioning 3:46 :  : DataTableSpec : Decision Tree Predictor : 3:52 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:47:51,667 : WARN  : KNIME-Worker-143-Decision Tree Learner 3:50 :  : DataTableSpec : Decision Tree Predictor : 3:52 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:47:53,449 : WARN  : KNIME-Worker-144-Decision Tree Predictor 3:52 :  : DataTableSpec : Decision Tree Predictor : 3:52 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:49:09,545 : WARN  : main :  : Node : CSV Reader : 3:59 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:50:50,311 : WARN  : main :  : Node : Color Manager : 3:55 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:51:44,796 : WARN  : main :  : Node : CSV Reader : 3:59 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:51:45,255 : WARN  : main :  : Node : CSV Reader : 3:59 : The node configuration changed and the table spec will be recalculated during execution.
+2021-11-30 20:51:46,857 : WARN  : KNIME-Worker-148-CSV Reader 3:59 :  : Node : Joiner : 3:64 : The join column names [id_comprador] do not exist in the target table, which only specifies the column names [colorBase, colorDerivado, umd, tipo, grupo, cantidad_articulos, id_proveedor, rango_compra, precio, rango_precio, nombre]
+2021-11-30 20:52:00,062 : WARN  : main :  : Node : Color Manager : 3:55 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:52:10,308 : WARN  : main :  : Node : Color Manager : 3:55 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:52:11,856 : WARN  : main :  : Node : Color Manager : 3:55 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:52:26,517 : WARN  : KNIME-Worker-150-Number To String (PMML) 3:62 :  : DataTableSpec : Decision Tree Predictor : 3:58 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:52:28,199 : WARN  : KNIME-Worker-152-Partitioning 3:63 :  : DataTableSpec : Decision Tree Predictor : 3:58 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:52:29,392 : WARN  : KNIME-Worker-153-Decision Tree Learner 3:60 :  : DataTableSpec : Decision Tree Predictor : 3:58 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:52:32,371 : WARN  : KNIME-Worker-154-Decision Tree Predictor 3:58 :  : DataTableSpec : Decision Tree Predictor : 3:58 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:53:55,039 : WARN  : main :  : Node : Color Manager : 3:24 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:53:55,722 : WARN  : main :  : Node : Color Manager : 3:24 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:54:01,513 : WARN  : KNIME-Worker-156-Number To String (PMML) 3:36 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:54:01,541 : WARN  : KNIME-Worker-158-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:54:01,862 : WARN  : KNIME-Worker-159-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:54:02,840 : WARN  : KNIME-Worker-160-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:55:48,869 : WARN  : main :  : Node : Color Manager : 3:24 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:55:58,991 : WARN  : main :  : Node : Color Manager : 3:24 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:56:01,327 : WARN  : main :  : Node : Color Manager : 3:24 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:56:05,708 : WARN  : KNIME-Worker-162-Number To String 3:65 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:56:05,724 : WARN  : KNIME-Worker-164-Partitioning 3:26 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:56:05,856 : WARN  : KNIME-Worker-165-Decision Tree Learner 3:25 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:56:06,328 : WARN  : KNIME-Worker-166-Decision Tree Predictor 3:27 :  : DataTableSpec : Decision Tree Predictor : 3:27 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:56:20,951 : WARN  : main :  : Node : Color Manager : 3:42 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:56:49,263 : WARN  : main :  : Node : Color Manager : 3:42 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:56:49,814 : WARN  : main :  : Node : Color Manager : 3:42 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:56:55,446 : WARN  : main :  : Node : Color Manager : 3:42 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:56:55,919 : WARN  : main :  : Node : Color Manager : 3:42 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:56:57,240 : WARN  : KNIME-Worker-169-Number To String 3:66 :  : DataTableSpec : Decision Tree Predictor : 3:41 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:57:00,923 : WARN  : KNIME-Worker-163-Partitioning 3:43 :  : DataTableSpec : Decision Tree Predictor : 3:41 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:57:01,045 : WARN  : KNIME-Worker-164-Decision Tree Learner 3:45 :  : DataTableSpec : Decision Tree Predictor : 3:41 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:57:01,654 : WARN  : KNIME-Worker-165-Decision Tree Predictor 3:41 :  : DataTableSpec : Decision Tree Predictor : 3:41 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:58:02,936 : WARN  : main :  : Node : Color Manager : 3:47 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:58:23,649 : WARN  : main :  : Node : Color Manager : 3:47 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:58:24,031 : WARN  : main :  : Node : Color Manager : 3:47 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 20:58:51,632 : WARN  : KNIME-Worker-171-Number To String 3:67 :  : DataTableSpec : Decision Tree Predictor : 3:52 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:58:57,887 : WARN  : KNIME-Worker-173-Partitioning 3:46 :  : DataTableSpec : Decision Tree Predictor : 3:52 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:58:58,100 : WARN  : KNIME-Worker-174-Decision Tree Learner 3:50 :  : DataTableSpec : Decision Tree Predictor : 3:52 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:58:58,925 : WARN  : KNIME-Worker-175-Decision Tree Predictor 3:52 :  : DataTableSpec : Decision Tree Predictor : 3:52 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 20:59:37,347 : WARN  : main :  : Node : Color Manager : 3:55 : Column "cantidad_articulos" has no nominal values set: execute predecessor or add Binner.
+2021-11-30 21:00:02,090 : WARN  : KNIME-Worker-177-Number To String 3:68 :  : DataTableSpec : Decision Tree Predictor : 3:58 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 21:00:04,453 : WARN  : KNIME-Worker-171-Partitioning 3:63 :  : DataTableSpec : Decision Tree Predictor : 3:58 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 21:00:04,595 : WARN  : KNIME-Worker-172-Decision Tree Learner 3:60 :  : DataTableSpec : Decision Tree Predictor : 3:58 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 21:00:05,511 : WARN  : KNIME-Worker-173-Decision Tree Predictor 3:58 :  : DataTableSpec : Decision Tree Predictor : 3:58 : DataColumnSpec already contains a color handler, ignoring color handler from second spec.
+2021-11-30 21:07:30,503 : WARN  : main :  : Node : Entropy Scorer : 3:37 : Invalid reference column name EducationLevel

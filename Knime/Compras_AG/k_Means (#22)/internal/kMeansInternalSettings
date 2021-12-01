@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="kMeans">
+    <entry key="dimensions" type="xint" value="10"/>
+    <entry key="ignoredColumns" type="xint" value="5"/>
+    <config key="clusterCoverage">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xint" value="305"/>
+        <entry key="1" type="xint" value="2704"/>
+        <entry key="2" type="xint" value="195"/>
+    </config>
+    <config key="kMeansCluster0">
+        <entry key="array-size" type="xint" value="5"/>
+        <entry key="0" type="xdouble" value="0.003189692535694701"/>
+        <entry key="1" type="xdouble" value="2.4786885245901638"/>
+        <entry key="2" type="xdouble" value="1.1967213114754098"/>
+        <entry key="3" type="xdouble" value="0.01639344262295082"/>
+        <entry key="4" type="xdouble" value="0.01639344262295082"/>
+    </config>
+    <config key="kMeansCluster1">
+        <entry key="array-size" type="xint" value="5"/>
+        <entry key="0" type="xdouble" value="0.012139972940446173"/>
+        <entry key="1" type="xdouble" value="0.0"/>
+        <entry key="2" type="xdouble" value="0.0"/>
+        <entry key="3" type="xdouble" value="0.0"/>
+        <entry key="4" type="xdouble" value="0.0"/>
+    </config>
+    <config key="kMeansCluster2">
+        <entry key="array-size" type="xint" value="5"/>
+        <entry key="0" type="xdouble" value="0.003484811790291514"/>
+        <entry key="1" type="xdouble" value="1.2923076923076924"/>
+        <entry key="2" type="xdouble" value="0.0"/>
+        <entry key="3" type="xdouble" value="0.0"/>
+        <entry key="4" type="xdouble" value="0.0"/>
+    </config>
+    <config key="FeatureNames">
+        <entry key="array-size" type="xint" value="10"/>
+        <entry key="0" type="xstring" value="total"/>
+        <entry key="1" type="xstring" value="colonia (to number)"/>
+        <entry key="2" type="xstring" value="ciudad (to number)"/>
+        <entry key="3" type="xstring" value="estado (to number)"/>
+        <entry key="4" type="xstring" value="pais (to number)"/>
+        <entry key="5" type="xstring" isnull="true" value=""/>
+        <entry key="6" type="xstring" isnull="true" value=""/>
+        <entry key="7" type="xstring" isnull="true" value=""/>
+        <entry key="8" type="xstring" isnull="true" value=""/>
+        <entry key="9" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
